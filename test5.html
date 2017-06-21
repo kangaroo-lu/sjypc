@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>用户注册</title>
+        <meta content="width=720,user-scalable=no" name="viewport">
+        <!--禁用点击拨号,禁止发邮件-->
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="email=no" />
+        <!--基础样式-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!--底部导航样式-->
+        <link rel="stylesheet" type="text/css" href="css/navtab.css" />
+        <!--icon样式-->
+        <link rel="stylesheet" href="css/iconfont.css" />
+        <!--本页样式-->
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        
+        <link rel="stylesheet" type="text/css" href="css/address.css"/>
+    </head>
+
+    <body>
+        <div class="login-center">
+            <form>
+                <ul>
+                    <div class="homotor-space-30"></div>
+                    <li id="login-username">
+                        <div class="login-icon"><span class="iconfont icon-shouji"></span></div>
+                        <div class="login-input">
+                            <input type="text" placeholder="请输入手机号码" />
+                            <div class="validate">
+                                <span>获取验证码</span>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="homotor-space-20"></div>
+                    <li id="login-password">
+                        <div class="login-icon"><span class="iconfont icon-yanzhengma"></span></div>
+                        <div class="login-input">
+                            <input type="password" placeholder="请输入验证码" />
+                        </div>
+                    </li>
+                    <div class="homotor-space-20"></div>
+                    <li id="login-btn">
+                        <div class="mybtn">注册</div>
+                    </li>
+                </ul>
+            </form>
+            <div class="login-remind">
+                <span class="iconfont icon-gouxuan icon-active"></span><span>继续代表你同意好美特汽配商城</span><span class="agreement">用户协议</span>
+            </div>
+        </div>
+        <div class="address-space-20"></div>
+        <div id="edit-content" class="edit-content">
+            <div class="edit-item">
+                <div class="edit-item-left">
+                    收货人
+                </div>
+                <div class="edit-item-right">
+                    <input type="text" value="张某某" />
+                </div>
+            </div>
+            <div class="edit-item">
+                <div class="edit-item-left">
+                    省
+                </div>
+                <div class="edit-item-right">
+                    <select id="loc-province">
+                    </select>
+                </div>
+            </div>
+            <div class="edit-item">
+                <div class="edit-item-left">
+                    市
+                </div>
+                <div class="edit-item-right">
+                    <select id="loc-city">
+                    </select>
+                </div>
+            </div>
+            <div class="edit-item">
+                <div class="edit-item-left">
+                    县/区
+                </div>
+                <div class="edit-item-right">
+                    <select id="loc-town">
+                    </select>
+                </div>
+            </div>
+            <div class="edit-item">
+                <div class="edit-item-left">
+                    详细街道
+                </div>
+                <div class="edit-item-right textarea">
+                    <textarea>常州街道正和路15号正和汽配园456号</textarea>
+                </div>
+            </div>
+            <div class="edit-item">
+                <div class="edit-item-center">
+                    提交信息
+                </div>
+            </div>
+        </div>
+        <div class="register-success">
+            <span class="iconfont icon-active icon-gouxuan"></span>
+            <div>
+                您的注册申请已提交成功，待审核。审核通过后我们会以短信的形式通知您，请留意您的短信信息。
+            </div>
+        </div>
+        <div class="homotor-dialog">
+            <div class="homotor-dialog-prompt">验证码错误</div>
+        </div>
+        <div class="homotor-backdrop"></div>
+        <!--jquery-->
+        <script src="js/jquery.min.js"></script>
+        <!--mui框架脚本-->
+        <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+        <!--基础脚本-->
+        <script src="js/index.js"></script>
+        <!--获取地址信息-->
+        <script src="js/getlocation.js"></script>
+        <script type="text/javascript">
+            mui.init()
+            //给遮罩层添加点击事件,点击关闭遮罩
+            var backdrop = document.getElementsByClassName("homotor-backdrop")[0];
+            var dialog = document.getElementsByClassName("homotor-dialog")[0];
+            backdrop.addEventListener("tap",function(){
+                hiddenBackdrop(backdrop);
+                hiddenDialog(dialog);
+            })
+            
+            $(".login-remind .iconfont:eq(0)").bind("tap",function(){
+                $(this).toggleClass("icon-active");
+            })
+            //注册
+            document.getElementById("login-btn").addEventListener("tap",function(){
+                document.getElementsByClassName("login-center")[0].style.display = 'none';
+                document.getElementById("edit-content").style.display = "block";
+            })
+            //提交信息
+            document.getElementsByClassName("edit-item-center")[0].addEventListener("tap",function(){
+                document.getElementById("edit-content").style.display = "none";
+                document.getElementsByClassName("register-success")[0].style.display = 'block';
+            })
+            //倒计时效果
+            var validate = document.getElementsByClassName("validate")[0];
+            validate.addEventListener("tap",function(){
+                var time = "<span><span class='validate-time'>60</span>'s重新发送</span>"
+                validate.innerHTML = time;
+                var nowDate = new Date();
+                var second = nowDate.getSeconds();
+                var tt = setInterval(function(){
+                    var nowTime = new Date();
+                    if(second > nowTime.getSeconds()){
+                        var passTime = nowTime.getSeconds() + 60 -second;
+                        document.getElementsByClassName("validate-time")[0].innerHTML = document.getElementsByClassName("validate-time")[0].innerText - passTime;
+                        second = nowTime.getSeconds();
+                    }else{
+                        var passTime = nowTime.getSeconds()-second;
+                        document.getElementsByClassName("validate-time")[0].innerHTML = document.getElementsByClassName("validate-time")[0].innerText - passTime;
+                        second = nowTime.getSeconds();
+                    }
+                    if(document.getElementsByClassName("validate-time")[0].innerText==-1){
+                        clearInterval(tt);
+                        validate.innerHTML = "<span>获取验证码</span>";
+                    }
+                },1000)
+            })
+        </script>
+    </body>
+
+</html>

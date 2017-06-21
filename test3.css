@@ -1,0 +1,160 @@
+*{margin:0;padding:0;}
+			ul{list-style:none;}
+				.cf:after {
+				content: "";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+			
+			#bar,
+			#bar .staged {
+				border: solid 2px #666;
+			}
+			
+			#bar .staged,
+			#bar .progress {
+				float: left;
+				background: #bbb;
+			}
+			
+			#bar {
+				margin: 120px 40px 80px 80px;
+				width: 560px;
+				background: #bbb;
+			}
+			
+			#bar,
+			#bar .progress,
+			#bar .pBar {
+				height: 20px;
+				border-radius: 20px;
+			}
+			
+
+			#bar .sBar,
+			#bar .progress:before {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+			#bar .staged,
+			#bar .sBar,
+			#bar .progress:after {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+			
+			#bar .staged {
+				font-size: 12px;
+				position: static;
+				margin: -16px;
+			}
+			
+			#bar .staged:first-child {
+				margin-left: -38px;
+			}
+			
+			#bar .staged:after {
+				content: attr(data-text);
+				display: block;
+				text-align: center;
+				margin-top: calc(100% + 10px);
+			}
+			
+			#bar .progress {
+				width: 120px;
+				padding-right: 20px;
+				position: relative;
+				z-index: 2;
+			}
+			
+			#bar .progress:last-child {
+				width: 80px;
+			}
+			
+			#bar .progress:after {
+				top: -15px;
+				content: attr(data-value);
+				display: block;
+				text-align: center;
+				line-height: 50px;
+				color: #fff;
+			}
+			
+			#bar .sBar,
+			#bar .pBar {
+				background:cornflowerblue;
+			}
+			
+			#bar .sBar,
+			#bar .progress:after {
+				position: absolute;
+				margin-left: -36px;
+			}
+			#bar .sBar:before{
+				width: 20px;
+				height: 20px;
+				border-radius:50%;
+			}
+			
+			#bar .sBar {
+				width: 20px;
+				height: 20px;
+				margin-left: -42px;
+				transform-origin: -4px 9.5px;
+				visibility: hidden;
+				
+			}
+			
+			#bar .pBar {
+				position: relative;
+				padding: 0 10px;
+				width: 0;
+				visibility: hidden;
+				
+			}
+			
+			#bar .sBarScale {
+				visibility: visible;
+				transform: scale(2.5);
+				transition: all 0.6s 1.8s;
+			}
+			
+			#bar .pBarShow {
+				visibility: visible;
+				transition: all 2s 0.2s;
+			}
+			
+			.msg:before,
+			.msg:after {
+				display: block;
+				position: absolute;
+				border-style: solid;
+				border-color: #ccc;
+				background: #fff;
+				top: 30px;
+			}
+			
+			.msg:before {
+				content: attr(data-text);
+				width: 180px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 12px;
+				text-align: center;
+				border-radius: 4px;
+				border-width: 1px;
+				top: -68px;
+				left: calc(100% - 100px);
+			}
+			
+			.msg:after {
+				content: "";
+				width: 14px;
+				height: 14px;
+				transform: rotate(45deg);
+				border-width: 0 1px 1px 0;
+				top: -34px;
+				left: calc(100% - 16px);}

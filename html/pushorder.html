@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<head>
+	<script type="text/javascript" src="../js/h5.js" async></script>
+	<!--<script type="text/javascript" src="js/classlist.js" async></script>
+	<script type="text/javascript" src="js/es5-sham.min.js" async></script>
+	<script type="text/javascript" src="js/es5-shim.min.js" async></script>-->
+	<!--<script type="text/javascript" src="js/ieobject.js" async></script>-->
+	<meta charset="utf-8"/>
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="viewport" content="width=1224"/>
+	<link rel="stylesheet" href="../css/pushorder.css" />
+	<link rel="stylesheet" type="text/css" href="../css/com.css"/>
+	<link rel="stylesheet" href="../css/artModal.css" />
+	
+	<script type="text/javascript">
+		try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }
+	</script>
+</head>
+<!--onbeforeunload="removecar()"-->
+<body >
+	<div class="site-top">
+		<div class="topcontainer">
+			<div class="topnav">
+				<a href="http://sjyyy.com/">三江源官网</a>
+				<span class="spl">|</span>
+				<a href="index.html">三江源网上商城</a>
+				<span class="spl">|</span>
+				<a href="shoplist.html">线下门店</a>
+			</div>
+			<a href="shopcar.html">
+				<div class="shopcar">
+					<img src="../img/购物车白色.png"alt="" />
+					<span style="position: relative;margin-left: 60px;">购物车</span>
+					<span class="car_mini_num"></span>
+				</div>
+			</a>
+			
+			<div class="topbar-info">
+				<span id="muid" class="myUserid" style="padding-right: 47px; cursor: pointer; text-align: center; background: url(../img/个人中心上.png)86% center no-repeat; background-size: 15px;" ></span>
+				<!--<a href="login.html" class="signout" style="margin-right: 20px;">退出登录</a>-->
+				<div class="userdrow">
+					<div style="width: 100%;height: 6px;background: url(../img/指向三角.png)center center no-repeat;"></div>
+					<div class="udbox">
+						<ul>
+							<li><a href="myinfo.html">个人资料</a></li>
+							<li><a href="addressMan.html">地址管理</a></li>
+							<li><a href="acSafe.html">账户与安全</a></li>
+							<li><a href="myorder.html">我的订单</a></li>
+							<li><a href="mycollet.html">我的收藏</a></li>
+							<li><a href="myconpon.html">我的优惠券</a></li>
+							<li><a href="mysaleafter.html">我的售后</a></li>
+							<li><a href="mycom.html">我的评价</a></li>
+							<li><a href="contactservice.html">联系客服</a></li>
+							<li style="cursor: pointer;" class="signout"><a>退出账号</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<span class="spl">|</span>
+				
+				<a href="myorder.html">我的订单</a>
+				
+			</div>
+			<div class="lbox" style="display: inline-block; height: 100%; float: right; line-height: 40px;">
+					<a href="login.html">登录</a> 
+					<span class="spl">|</span>
+					<a href="register.html">注册</a>
+
+				</div>
+			
+		</div>
+	</div>
+	<div class="home_first">
+		<div class="home_first_content">
+			<div class="logo">
+				<img src="../img/logo.png"/>
+			</div>
+			<a href="../index.html" class="hfc_link borderbottom">首页</a>
+			<a href="" class="hfc_link">仙草预售</a>
+			<a href="fenlei.html" class="hfc_link">爆款虫草</a>
+			<a href="distinguish.html" class="hfc_link">虫草鉴别</a>
+			<a href="distinguish.html" class="hfc_link">虫草故事</a>
+			<div class="search">
+				<input type="" name="" id="" value="" placeholder="搜索"/>
+				<div class="searchSubmit">
+					<img src="../img/搜索-搜索.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="packageBox" style="height: 317px !important;">
+		<div class="pb_head">
+			<span class="pbh_title">收货信息</span>
+		</div>
+		<div class="isinfo" >
+			<div class="pb_body">
+				<div class="pbb_Lwrap">	
+				</div>
+				<div class="pbb_Rwrap">
+					<div style="cursor: pointer;" data-toggle="artModal" data-target="myModal_1" class="pbbr_top">
+						切换地址
+					</div>
+					<div style="cursor: pointer;" class="pbbr_bottom" onclick="addnew()">
+						新建地址
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="addnewinfo" style="display: none;">
+			<div style="width: 1194px;height: 207px;float: left; padding: 30px 0 30px 30px;">
+				<div class="lmodule" style="display: inline-block;width: 608px;height: 207px;">
+					<div class="w-row rowfirst">
+						<span style="width: 68px;float: left; margin-right: 14px;display: inline-block;font-size: 14px;text-align: right;">所在地区:</span>
+						<select onchange="provinceToCity()" name="province" id="province" style="float: left;border: 1px solid #ddd;width: 150px;height: 28px;margin-right: 38px;"></select>
+						<select onchange="cityToDistrict()" name="city" id="city" style="border: 1px solid #ddd; width: 150px;float: left;height: 28px;margin-right: 38px;"></select>
+						<select name="area" id="district" style="border: 1px solid #ddd; width: 150px;float: left;height: 28px;"></select>
+						<div style="clear: both;"></div>
+					</div>
+					<div style="margin-top: 20px;" class="w-row">
+						<span style="width: 68px;float: left; margin-right: 10px;display: inline-block;font-size: 14px;text-align: right;">详细地址:</span>
+						<div style="float: right;">
+							<textarea class="address" name="address" style=" border: 1px solid #ddd;height: 90px; padding: 6px 9px; width: 507px; border-radius: 0px; float: left; z-index: auto; position: relative; line-height: normal; font-size: 13.3333px; transition: none; background: transparent !important;" rows="10" cols="30"></textarea>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="w-row" style="margin-top: 20px;height: 28px;">
+						<div style="line-height: 28px;width: 350px;height: 28px;float: left;">
+							<span style="width: 68px;float: left; margin-right: 14px;display: inline-block;font-size: 14px;text-align: right;">收货人:</span>
+							<input type="text" name="" class="shouhuoren" style="float: left;width: 140px; line-height: 28px; border: 1px solid #ddd; font-size: 12px; padding-left: 9px;" id="" value="" />
+						</div>
+						<div style="float: right;width: 235px;height: 28px;line-height: 28px;">
+							<span style="width: 68px;float: left; margin-right: 14px;display: inline-block;font-size: 14px;text-align: right;">手机号码:</span>
+							<input type="text" name="" class="shoujihao" style="float: right;width: 140px; line-height: 28px; border: 1px solid #ddd; font-size: 12px; padding-left: 9px;" id="" value="" />
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="rmodule" style="display: inline-block;position: relative; height: 103px; margin-left: 117px; width: 360px; padding: 60px 0 43px 60px; border-left: 1px dashed #dedede;">
+					<!--<div><input type="checkbox" class="setdefault" name="" id="" value="" /></div>-->
+					<div style="width: 100%;height: 18px;line-height: 18px; float: left;"><label  class="moren-radio" ><input onclick="setdea(this)" type="checkbox" name="addre"  class="inp" id="" value="" /><i></i><span style="color: #333333;margin-left:10px;font-size: 14px;">设为默认</span><label></div>
+					<div style="width: 100%;margin-top: 20px; float: left;">
+						<div onclick="queren()" style="width: 144px;cursor: pointer; border-radius: 3px; height: 42px;background: #25B351;text-align: center;line-height: 42px;color: #fff;float: left;margin-right: 20px;">
+						确定			
+						</div>
+						<div onclick="closeinfo()" style="float: left;cursor: pointer; border-radius: 3px; width: 140px;height: 38px;border: 2px solid #25B351;color: #25B351;line-height: 38px;text-align: center;">
+						取消	
+						</div>
+					</div>
+					
+					<div class="pas" style="display: none; width: 256px; font-size: 12px; margin-bottom: 12px; height: 20px; float: left; margin-top: 20px; position: relative; background: #ffebeb; color: #e4393c; border: 1px solid #faccc6; padding: 3px 10px 3px 40px; line-height: 15px;">
+							<b style="position: absolute; top: 50%; left: 10px; display: block; margin-top: -8px; width: 16px; height: 16px; overflow: hidden; background: url(../img/警示.png)center center no-repeat;"></b>
+							<span class="alert">请填写完整信息</span>
+							<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div class="addinfofir" onclick = "addnew()" style="display: none; width: 118px;padding-right: 30px; height: 42px;line-height: 42px;text-align: right;border: 1px solid #DDDDDD;border-radius: 3px;background-color: #F5F5F5 !important;color: #666666;margin: 0 auto;background: url(../img/加号.png)22% center no-repeat; margin-top: 120px;">
+			新建地址
+		</div>
+		
+	</div>
+	<div class="orderListbox">
+		<div class="ol_head">
+			<div class="olh_wrap">
+				<span class="olhw_title">商品信息</span>
+				<div class="olhw_r">
+					<span class="danjia">单价</span>
+					<span class="shuliang" >数量</span>
+					<span class="xiaoji" >小计</span>
+					<span class="shifu">实付</span>
+				</div>
+			</div>
+		</div>
+		<div class="ol_body">
+			<ul id="list" class="list">
+				
+
+				
+			</ul>
+		</div>
+		<div class="ol_foot">
+			<div class="olf_head">
+				<span style="display: inline-block;height: 100%;line-height: 80px; margin-left: 40px;color: #333333;margin-right: 100px;">发票信息</span>
+				<div style="width: 1020px;display: inline-block;float: right;height: 80px;position: relative;">
+					<label style="float: left;"  class="fapiao" ><input  type="checkbox" name="addre"  class="inp" id="" value="" /><i></i><label>
+					<span style="display: inline-block;line-height: 80px;font-size: 14px;color: #666666; float: left;">我要开发票</span>
+				</div>
+				
+			</div>
+			<div class="olf_body">
+				<div class="olfb_head" style="height: 200px !important;">
+					<span style="display: inline-block;height: 100%;float:left;color: #333333;margin-right: 89px;">优惠信息</span>
+					<div class="vouinfo" style="width: 980px;display: inline-block;float: left !important;height: auto;position: relative;">
+						<div style="height: 40px;margin-bottom: 10px;">
+							<div style="display: inline-block;float: left; width: 60px; height: 32px; font-size: 14px; color: #F94530; border: 1px solid #f94530; text-align: center; line-height: 32px; border-radius: 2px; margin-left: 10px;">选择</div>
+							<span style="float: left;line-height: 32px;margin-left: 10px;color: #666666;">满<span class="minp" style="color: #333333;">999</span>元减<span class="facp" style="color: #F94530;">100</span>元</span>
+							<div style="clear: both;"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="olfb_body">
+					<!--<div style="width: 100%;height: 40px;"></div>-->
+					<div class="olfbb_wrap">
+						<div class="olfbb_lwrap">
+							<!--<input type="checkbox" class="select" name="" id="" value="" />-->
+							<span class="dengji" style="font-size: 14px;color: #333333;margin-right: 41px;">会员等级</span>
+							<span class="dengjishu" style="font-size: 14px;color: #666666;"></span>
+							<!--<span style="font-size: 14px;color: #333333;margin-right: 41px;">会员等级</span>-->
+							<!--<span style="font-size: 14px;color: #666666;">( 您有积分<span class="yiyoujifen">1000</span>点可用，抵<span class="jifenrmb">9.9</span>人民币 )</span>-->
+							<div style="width: 100%;height: 40px;"></div>
+							<label style="float: left;"  class="mendianziti" ><input  type="checkbox" name="addre"  class="inp" id="" value="" /><i></i><label>
+							<span style="font-size: 14px;color: #333333;margin-right: 67px;">门店自提</span>
+							<span style="font-size: 14px;color: #666666;">( 您可以到附近门店提取货物 )</span>
+							<div style="width: 100%;height: 40px;"></div>
+							<div id="selectArea">
+								<p>
+									<select name="province" id="province"></select>
+									<select name="city" id="city"></select>
+									<select name="area" id="area"></select>
+								</p>
+								<p>
+									<select id="shop" >
+										<option value="">请选择门店</option>
+									</select>
+								</p>
+								<span style="display: block;width: 64px;height: 30px;line-height: 30px;text-align: center;color: #4F9CEA; border: 1px solid #4f9cea;font-size: 14px;margin-top: 10px;">更多门店</span>
+								<!--<p id='place'>请选择地区</p>-->
+							</div>
+						</div>
+						<div class="olfbb_rwrap">
+							<p class="zhekou" style="width: 100%;margin-bottom: 20px;color: #333333;"><span style="color: #666666;">会员折扣：</span><span class="zhekounum" style="float: right;">9.9</span></p>
+							<p style="width: 100%;margin-bottom: 20px;color: #333333;"><span style="color: #666666;">商品 合计：</span><span class="heji" style="float: right;">5600.00</span><span style="float: right;">￥</span></p>
+							<p style="width: 100%;margin-bottom: 20px;color: #333333;"><span style="color: #666666;">优&nbsp;&nbsp;惠&nbsp;&nbsp;券：</span><span class="youhuiquan" style="float: right;"></span><span style="float: right;">-￥</span></p>
+							<p style="width: 100%;margin-bottom: 20px;color: #333333;"><span style="color: #666666;">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="yunfei" style="float: right;">100.00</span><span style="float: right;">+￥</span></p>
+							<div style="width: 100%;border-bottom: 1px dashed #bbb; height: 10px;"></div>
+							<div style="line-height: 80px; position:relative; width: 100%;height: 80px;">
+								<span style="font-size: 14px;color: #666666;float: left;">应付总额：</span>
+								
+								<span class="zhonge" style="font-size: 24px;color: #F94530;float: right;">13456</span>
+								<span style="float: right;font-size: 24px;color: #F94530;">￥</span>
+							</div>
+							<div onclick="gopay()" style="text-align:center;width: 250px;line-height: 50px; height: 50px;border-radius: 2px; position: relative;cursor: pointer; background: #f94530;color: white;font-size: 24px;">
+								<a>去付款</a>
+							</div>
+							<span style="display:block; float: right;font-size: 14px;color: #666666;">本次交易可获得三江源积分<span class="jifen"></span>点</span>
+							<p class="reinfo" style="margin-top: 30px;font-size: 12px;color: #666666;float: right;"></p>
+							<p class="readre" style="width: 1000px !important;z-index: 10; text-align: right; float: right; margin-top: 8px;font-size: 12px;color: #666666;"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="footdiv">
+		<div class="foothead">
+				<div class="footheadcontainer">
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+				</div>
+		</div>
+		<div class="footbody">
+			<div class="foot_list">
+				<span class="listtitle">购物指南</span>
+				<ul>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">会员介绍</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">联系客服</a></li>
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">配送方式</span>
+				<ul>
+					<li><a href="">门店自提</a></li>
+					<li><a href="">快递配送</a></li>
+
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">支付方式</span>
+				<ul>
+					<li><a href="">支付宝支付</a></li>
+					<li><a href="">微信支付</a></li>
+					
+				</ul>	
+				
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">售后服务</span>
+				<ul>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">退款说明</a></li>
+					<li><a href="">取消订单</a></li>
+				</ul>
+			</div>
+			<div class="code">
+				<span class="listtitle">三江源APP</span>
+				<div class="codeimg">
+					<img src="../img/微信截图_20170515153009.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="footbottom">
+			<p>
+				<a href="">关于我们</a>
+				<span class="spll">|</span>
+				<a href="">帮助中心</a>
+				<span class="spll">|</span>
+				<a href="">售后服务</a>
+				<span class="spll">|</span>
+				<a href="">配送与验收</a>
+				<span class="spll">|</span>
+				<a href="">企业采购</a>
+				<span class="spll">|</span>
+				<a href="">友情链接</a>
+			</p>
+			<p>
+				<a href="">京公安备11002305678088号</a>
+				<span class="spll">|</span>
+				<a href="">京ICP证070359号</a>
+				<span class="spll">|</span>
+				<a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="spll">|</span>
+				<a href="">食品经营许可证：123456468789321</a>
+				
+			</p>
+			<p>
+				<a href="">三江源公司版权所有@2017-2027</a>
+				<span class="spll">|</span>
+				<a href="">消费者维权热线4006067733</a>
+				<span class="spll">|</span>
+				<a href="">经营证照</a>			
+			</p>
+			<p style="margin-top: 24px;">
+				<a href=""><img src="../img/备案.png" alt="" /></a>
+				<a href=""><img src="../img/信用评价.png"/></a>
+				<a href=""><img src="../img/网络警察.png" alt="" /></a>
+				<a href=""><img src="../img/网路举报.png" alt="" /></a>
+				<a href=""><img src="../img/诚信网站.png" alt="" /></a>
+				<a href=""><img src="../img/举报中心.png" alt="" /></a>
+			</p>
+		</div>
+	</div>
+	<div class="artModal fade" id="myModal_1">
+        <div class="artModal-dialog">
+            <div class="artModal-content">
+                <div class="custom_style">
+                	<!--设置样式-->
+                	<div class="addNew">
+                		<div style="width: 100%;height: 40px;position: relative; line-height: 40px;"> 
+                			<span id="modtitle" style="font-size: 18px;color: #333;float: left;">选择地址</span>
+                			<img data-dismiss="artModal" style="margin: auto;position: absolute;right: 0;left: 90%;top: 0;bottom: 0;" src="../img/删除按钮.png"/>
+                		</div>
+                		<div class="addlist" style="width: 100%;height: 400px;margin-bottom: 30px;overflow-y: scroll;">
+                			<ul class="Addlist">
+                				<!--<li onclick="choiceLi(this)" style="position: relative; width: 91%;border-radius: 2px;margin-bottom: 10px; border: 1px solid #DFDFDF;padding: 24px; height: 110px;">
+                					<p style="margin-bottom: 12px;font-size: 12px;"><span style="letter-spacing: 0.34em;color: #666;">收货人：</span><span>李和平</span></p>
+                					<p style="margin-bottom: 12px;font-size: 12px;"><span style="color: #666;">联系方式：</span><span>12345678978</span></p>
+                					<p style="font-size: 12px;"><span style="color: #666;display: inline-block;float: left;">收货地址：</span><span style="display: inline-block;float: right;width: 88%;">一二三四五六七八九十十一四二仨的的阿斯打死打伤打撒啊湿嗒嗒似懂非懂风扫地法人股打死打伤打撒啊湿嗒嗒似懂非懂风扫地法人股</span></p>-->
+                					<!--<i class="icon w-icon-normal icon-normal-spec-arrow"></i>-->
+                				</li>
+                			</ul>
+                		</div>
+                		<div style="width: 50%;height: 48px;margin: 0 auto;">
+                		 	<div id="queding" onclick="listsubmit()" style="cursor: pointer; display: inline-block;width: 144px;height: 48px;background: #25B351;line-height: 48px !important; border-radius:3px;margin-right: 20px;margin: 0 auto; text-align: center;color: #fff;line-height: 32px;">确定</div>
+                		 	<div data-dismiss="artModal" style="display: inline-block;width: 144px;height: 48px;border: 1px solid #25B351; border-radius:3px;line-height: 48px !important; margin: 0 auto; text-align: center;color: #25B351;line-height: 32px;">取消</div>
+                		 </div>
+                	</div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="../js/citys.js"></script>
+	<script src="../js/artModal.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/pushorder.js"></script>
+	<script type="text/javascript">
+		$('#selectArea').citys({
+			required:false,
+		    nodata:'disabled',
+//		    onChange:function(data){
+//      		var text = data['direct']?'(直辖市)':'';
+//      	}
+		})
+	</script>
+</body>

@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<head>
+	<script type="text/javascript" src="../js/h5.js" async></script>
+	<!--<script type="text/javascript" src="js/classlist.js" async></script>
+	<script type="text/javascript" src="js/es5-sham.min.js" async></script>
+	<script type="text/javascript" src="js/es5-shim.min.js" async></script>-->
+	<!--<script type="text/javascript" src="js/ieobject.js" async></script>-->
+	<meta charset="utf-8"/>
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="viewport" content="width=1224"/>
+	<link rel="stylesheet" href="../css/shopcar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/com.css"/>
+	
+	<script type="text/javascript">
+		try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }
+	</script>
+</head>
+<body>
+	<div class="rfloat" style="width: 60px;border-radius: 2px; height: 184px;position: fixed;top: 60%;right: 1%;z-index: 60;border: 1px solid grey;">
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf客服.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">联系客服</span>
+		</div>
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf下载.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">下载APP</span>
+		</div>
+		<div id="up" style="width: 100%;height: 60px;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf返回顶部.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">返回顶部</span>
+		</div>
+	</div>
+	<div class="site-top">
+		<div class="topcontainer">
+			<div class="topnav">
+				<a href="http://sjyyy.com/">三江源官网</a>
+				<span class="spl">|</span>
+				<a href="index.html">三江源网上商城</a>
+				<span class="spl">|</span>
+				<a href="shoplist.html">线下门店</a>
+			</div>
+			<a href="shopcar.html">
+				<div class="shopcar">
+					<img src="../img/购物车白色.png"alt="" />
+					<span style="position: relative;margin-left: 60px;">购物车</span>
+					<span class="car_mini_num"></span>
+				</div>
+			</a>
+			
+			<div class="topbar-info">
+				<span id="muid" class="myUserid" style="padding-right: 47px; cursor: pointer; text-align: center; background: url(../img/个人中心上.png)86% center no-repeat; background-size: 15px;" ></span>
+				<!--<a href="login.html" class="signout" style="margin-right: 20px;">退出登录</a>-->
+				<div class="userdrow">
+					<div style="width: 100%;height: 6px;background: url(../img/指向三角.png)center center no-repeat;"></div>
+					<div class="udbox">
+						<ul>
+							<li><a href="myinfo.html">个人资料</a></li>
+							<li><a href="addressMan.html">地址管理</a></li>
+							<li><a href="acSafe.html">账户与安全</a></li>
+							<li><a href="myorder.html">我的订单</a></li>
+							<li><a href="mycollet.html">我的收藏</a></li>
+							<li><a href="myconpon.html">我的优惠券</a></li>
+							<li><a href="mysaleafter.html">我的售后</a></li>
+							<li><a href="mycom.html">我的评价</a></li>
+							<li><a href="contactservice.html">联系客服</a></li>
+							<li style="cursor: pointer;" class="signout"><a>退出账号</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<span class="spl">|</span>
+				
+				<a href="myorder.html">我的订单</a>
+				
+			</div>
+			<div class="lbox" style="display: inline-block; height: 100%; float: right; line-height: 40px;">
+					<a href="login.html">登录</a> 
+					<span class="spl">|</span>
+					<a href="register.html">注册</a>
+
+				</div>
+			
+		</div>
+	</div>
+	<div class="home_first">
+		<div class="home_first_content">
+			<div class="logo">
+				<img src="../img/logo.png"/>
+			</div>
+			<a href="../index.html" class="hfc_link borderbottom">首页</a>
+			<a href="" class="hfc_link">仙草预售</a>
+			<a href="fenlei.html" class="hfc_link">爆款虫草</a>
+			<a href="" class="hfc_link">虫草鉴别</a>
+			<a href="distinguish.html" class="hfc_link">虫草故事</a>
+			<div class="search">
+				<input type="" name="" id="" value="" placeholder="搜索"/>
+				<div class="searchSubmit">
+					<img src="../img/搜索-搜索.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="carlist" class="carlist">
+		<div class="carhead">
+			<input type="checkbox" name="" id="" value="" class="checkbox select"/>
+			<span class="quanxuan">全选</span>
+			<span class="xiaoji">小计</span>
+			<span class="shuliang">数量</span>
+			<span class="danjia">单价</span>
+		</div>
+		<div class="listdetail">
+			<ul id="list" class="list">
+<!--<li class="goodLi">
+					<input type="checkbox" name="" id="" value="" class="checkbox selectLi" />
+					<div class="goodCar_img">
+						<img src="../img/购物车图片.png" alt="" />
+					</div>
+					<div class="goodCar_info">
+						<span class="goodCar_goodName">三江源冬虫夏草青海玉树原产地虫草</span>
+						<span class="goodCar_goodInfo">2根/g</span>
+					</div>
+					<div class="goodCar_goodPrice">
+						<div class="pricebox">
+							<span class="sybom">￥</span><span class="goodprice">19099.00</span>
+							
+						</div>
+						
+					</div>
+					<div class="goodCar_numberchioce">
+						<div class="numberSelect">
+							<button id="reduce" class="reduce">
+								<img src="../img/减号深.png"/>
+							</button>
+							<input type="" name="" id="number" value="1" class="number"/>
+							<button id="add" class="add">
+								<img src="../img/加号.png"/>
+							</button>
+						</div>
+					</div>
+					<div class="goodCar_countPrice">
+						<div class="pricebox">
+							<span class="sybom">￥</span><span class="countprice">19099.00</span>
+						</div>
+					</div>
+					
+					<div class="goodCar_del">
+						<a class="del" style="display: inline-block;width:16px;height:16px;background: url(../img/删除按钮.png);"></a>
+					</div>
+					
+				</li>-->
+				
+			</ul>
+		</div>
+		
+	</div>
+	<div class="listfoot">
+		<input type="checkbox" name="" id="" value="" class="checkbox select footselect"/>
+		<span class="goodCarF_select">全选</span>&nbsp;&nbsp;<span style="display: none;color: red;" id="selectTotal">0</span>
+		<span id="delectAll" style="cursor: pointer;" class="delectAll">批量删除</span>
+		<div class="orderSubmit" style="cursor: pointer;">下 单</div>
+		<div class="priceinfo">
+			<span>商品合计：</span><span>￥</span><span id="total">---</span>
+			
+			<div style="margin-top: 20px;">
+				<span>应付金额：</span><span style="color: #F9442F;font-size: 24px;">￥</span><span id="payprice" class="payprice">---</span>
+			</div>
+		</div>
+		
+	</div>
+	<div class="footdiv">
+		<div class="foothead">
+				<div class="footheadcontainer">
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+				</div>
+		</div>
+		<div class="footbody">
+			<div class="foot_list">
+				<span class="listtitle">购物指南</span>
+				<ul>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">会员介绍</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">联系客服</a></li>
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">配送方式</span>
+				<ul>
+					<li><a href="">门店自提</a></li>
+					<li><a href="">快递配送</a></li>
+
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">支付方式</span>
+				<ul>
+					<li><a href="">支付宝支付</a></li>
+					<li><a href="">微信支付</a></li>
+					
+				</ul>	
+				
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">售后服务</span>
+				<ul>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">退款说明</a></li>
+					<li><a href="">取消订单</a></li>
+				</ul>
+			</div>
+			<div class="code">
+				<span class="listtitle">三江源APP</span>
+				<div class="codeimg">
+					<img src="../img/微信截图_20170515153009.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="footbottom">
+			<p>
+				<a href="">关于我们</a>
+				<span class="spll">|</span>
+				<a href="">帮助中心</a>
+				<span class="spll">|</span>
+				<a href="">售后服务</a>
+				<span class="spll">|</span>
+				<a href="">配送与验收</a>
+				<span class="spll">|</span>
+				<a href="">企业采购</a>
+				<span class="spll">|</span>
+				<a href="">友情链接</a>
+			</p>
+			<p>
+				<a href="">京公安备11002305678088号</a>
+				<span class="spll">|</span>
+				<a href="">京ICP证070359号</a>
+				<span class="spll">|</span>
+				<a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="spll">|</span>
+				<a href="">食品经营许可证：123456468789321</a>
+				
+			</p>
+			<p>
+				<a href="">三江源公司版权所有@2017-2027</a>
+				<span class="spll">|</span>
+				<a href="">消费者维权热线4006067733</a>
+				<span class="spll">|</span>
+				<a href="">经营证照</a>			
+			</p>
+			<p style="margin-top: 24px;">
+				<a href=""><img src="../img/备案.png" alt="" /></a>
+				<a href=""><img src="../img/信用评价.png"/></a>
+				<a href=""><img src="../img/网络警察.png" alt="" /></a>
+				<a href=""><img src="../img/网路举报.png" alt="" /></a>
+				<a href=""><img src="../img/诚信网站.png" alt="" /></a>
+				<a href=""><img src="../img/举报中心.png" alt="" /></a>
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/shopcar.js"></script>
+	
+</body>

@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: "微软雅黑";
+	/*color: #333 !important;*/
+	background: #fff;
+	min-width: 1224px;
+	/*display: block;*/
+}
+input{
+	border:none;
+	background:transparent;
+	outline:none;
+}
+a{
+	text-decoration: none;
+	color:#333333;
+}
+
+em{	
+	font-style:normal
+}
+
+li{
+	list-style: none;
+}

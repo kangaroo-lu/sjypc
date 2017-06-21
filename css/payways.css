@@ -1,0 +1,106 @@
+.paybox{
+	width: 1224px;
+	height: 190px;
+	position: relative;
+	margin: 0 auto;
+	border: 1px solid lightgray;
+
+}
+.boxhead{
+	height: 50px;
+	width: 100%;
+	background: #F5F5F5;
+}
+.paybody{
+	line-height: 140px;
+	height: 140px;
+}
+/* 自定义单选框 */
+.ec-label-radio{
+  	display: inline-block;
+  	width: 200px;
+  	height: 60px;
+  	float: left;
+  	margin-top: 44px;
+  	margin-left: 40px;
+  	line-height: 60px;
+}
+.ec-label-radio>input{
+    /*display: none;*/
+   width: 1px;
+   height: 1px;
+}
+.ec-label-radio>i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	transition: all 0.2s linear;
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	-o-transition:all 0.2s linear;
+	position: relative;
+}
+.ec-label-radio>input:checked+i{
+	border: 1px solid transparent;
+	box-shadow:0px 0px 3px #25B350;
+}
+.ec-label-radio>input:checked+i:after{
+    content: '';
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#25b350;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.ec-label-radio>input:checked:root{
+	border: 1px solid #25B351 !important;
+}
+/*******************付款信息*********************/
+.payinfo{
+	width: 1224px;
+	margin-top: 16px;
+	margin: 0 auto;
+	height: 180px;
+}
+.money{
+	font-size: 24px;
+	color: #F94530 !important;
+	float: right;
+}
+.gopay{
+	width: 184px;
+	height: 48px;
+	position: relative;
+	float: right;
+	color: #FFf;
+	margin-bottom: 10px;
+	background: #F94530;
+	line-height: 48px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+/**********************     weixin      **************************/
+.payimg{
+	margin: auto;
+	right: 0;top: 0;bottom: 0;left: 0;
+	position: absolute;
+	height: 100%;
+}
+.erweima{
+	width: 180px;
+	height: 180px;
+	position: relative;
+	margin-bottom: 10px;
+	margin: 0 auto;
+	background: cornflowerblue;
+}

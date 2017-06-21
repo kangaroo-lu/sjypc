@@ -1,0 +1,727 @@
+﻿<!DOCTYPE HTML>
+<head>
+	<!--<script type="text/javascript" src="js/h5.js" async></script>
+	<script type="text/javascript" src="js/classlist.js" async></script>
+	<script type="text/javascript" src="js/es5-sham.min.js" async></script>
+	<script type="text/javascript" src="js/es5-shim.min.js" async></script>
+	<script type="text/javascript" src="js/ieobject.js" async></script>-->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="viewport" content="width=1224"/>
+	<link rel="stylesheet" href="../css/gooddetail.css" />
+	<link rel="stylesheet" type="text/css" href="../css/page.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/com.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/artMessage.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/artModal.css"/>
+	
+	<script type="text/javascript">
+		try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }
+	</script>
+</head>
+<body>
+	<div class="rfloat" style="width: 60px;background: #ffffff; border-radius: 2px; height: 184px;position: fixed;top: 60%;right: 1%;z-index: 60;border: 1px solid grey;">
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf客服.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">联系客服</span>
+		</div>
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf下载.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">下载APP</span>
+		</div>
+		<div id='up' style="width: 100%;height: 60px;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf返回顶部.png"/>
+			</div>
+			<span  style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">返回顶部</span>
+		</div>
+	</div>
+	
+
+	<div class="site-top">
+		<div class="topcontainer">
+			<div class="topnav">
+				<a href="http://sjyyy.com/">三江源官网</a>
+				<span class="spl">|</span>
+				<a href="index.html">三江源网上商城</a>
+				<span class="spl">|</span>
+				<a href="shoplist.html">线下门店</a>
+			</div>
+			<a href="shopcar.html">
+				<div class="shopcar">
+					<img src="../img/购物车白色.png"alt="" />
+					<span style="position: relative;margin-left: 60px;">购物车</span>
+					<span class="car_mini_num"></span>
+				</div>
+			</a>
+			
+			<div class="topbar-info">
+				<span id="muid" class="myUserid" style="padding-right: 47px; cursor: pointer; text-align: center; background: url(../img/个人中心上.png)86% center no-repeat; background-size: 15px;" ></span>
+				<!--<a href="login.html" class="signout" style="margin-right: 20px;">退出登录</a>-->
+				<div class="userdrow">
+					<div style="width: 100%;height: 6px;background: url(../img/指向三角.png)center center no-repeat;"></div>
+					<div class="udbox">
+						<ul>
+							<li><a href="myinfo.html">个人资料</a></li>
+							<li><a href="addressMan.html">地址管理</a></li>
+							<li><a href="acSafe.html">账户与安全</a></li>
+							<li><a href="myorder.html">我的订单</a></li>
+							<li><a href="mycollet.html">我的收藏</a></li>
+							<li><a href="myconpon.html">我的优惠券</a></li>
+							<li><a href="mysaleafter.html">我的售后</a></li>
+							<li><a href="mycom.html">我的评价</a></li>
+							<li><a href="contactservice.html">联系客服</a></li>
+							<li style="cursor: pointer;" class="signout"><a>退出账号</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<span class="spl">|</span>
+				
+				<a href="myorder.html">我的订单</a>
+				
+			</div>
+			<div class="lbox" style="display: inline-block; height: 100%; float: right; line-height: 40px;">
+					<a href="login.html">登录</a> 
+					<span class="spl">|</span>
+					<a href="register.html">注册</a>
+
+				</div>
+			
+		</div>
+	</div>
+	<div class="home_first">
+		<div class="home_first_content">
+			<div class="logo">
+				<img src="../img/logo.png"/>
+			</div>
+			<a href="../index.html" class="hfc_link borderbottom">首页</a>
+			<a href="" class="hfc_link">仙草预售</a>
+			<a href="fenlei.html" class="hfc_link">爆款虫草</a>
+			<a href="" class="hfc_link">虫草鉴别</a>
+			<a href="distinguish.html" class="hfc_link">虫草故事</a>
+			<div class="search">
+				<input type="" name="" id="" value="" placeholder="搜索"/>
+				<div class="searchSubmit">
+					<img src="../img/搜索-搜索.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class='detail'>
+		<div class='good'>
+			<div id="gallery">
+				<div class="gallery_main">
+					<div class="gallery_small" id="gallerySmall">
+						<span class="gallery_move" id="galleryMove"></span>
+						<img src="http://image.mihui365.com/bbc/skuImg/4908049048341_1001.jpg" />
+					</div>
+					<div class="gallery_big" id="galleryBig">
+						<img src="http://image.mihui365.com/bbc/skuImg/4908049048341_1001.jpg" id="galleryBigImg"/>
+					</div>
+				</div>
+				<div class="gallery_slide_box">
+					<div class="arrow arrow_left" id="arrowLeft"></div>
+					<div class="arrow arrow_right" id="arrowRight"></div>
+					<div class="gallery_slide_box_inner" id="galleryInner">
+						<ul class="gallery_slide" id="gallerySlide">
+							<!--<li>
+								<img src="../img/详情大图.png" />
+							</li><li>
+								<img src="../img/详情小图1.png" />
+							</li><li>
+								<img src="../img/详情大图.png" />
+							</li><li>
+								<img src="../img/详情大图.png" />
+							</li><li>
+								<img src="../img/详情大图.png" />
+							</li>
+							<li>
+								<img src="../img/详情大图.png" />
+							</li>-->
+		
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class='choice'>
+				<strong>三江源冬虫夏草正品野生青海玉树买10送1冬虫夏草正品礼盒包邮</strong>
+				<p class='ad'>专业生产&nbsp;只为健康</p>
+				<div class='rate'>
+					<div class='starRate'>
+						<div class='star'>
+						</div>
+						<span class='score'>4.9</span>					 
+					</div>
+					<div class='sale'>
+						<a href='#'>（评价：669）</a>
+						<span >销量</span>
+						<span >600</span>
+					</div>
+				</div>
+				<div class='activity'>
+					<p>
+						<span class='headline'>原价格</span>
+						<span class='linethrough'>￥2500</span>
+					</p>
+					<p>
+						<span class='headline'>促销价</span>
+						<span class='currentPrice'>￥1999</span>
+					</p>
+					
+					<div class='coupon'>
+						<span class='headline pull-left'>优惠活动</span>
+						<div class='pull-left saleCoupon'>
+							<!--<p><span class='receive'>领取</span>5元优惠券，订单满29元使用</p>-->
+							<!--<p><span class='receive'>领取</span>5元优惠券，订单满29元使用</p>
+							<p><span class='receive'>领取</span>5元优惠券，订单满29元使用</p>-->
+						</div>
+					</div>
+				</div>
+				<div class='purchase'>
+					<p>
+						<span class='headline'>商品规格</span>
+						<span class='norms' style="position: relative;">3根/g</span>
+					</p>
+					
+					
+					<div>
+						<span class="headline pull-left">选择数量</span>
+						<div class="pull-left operate">
+							<div class="numCount">
+								<div class="count minus"><img id="minusImg" src="../img/减号浅.png"></div>
+								<em class="num">1</em>
+								<div class="count plus"><img src="../img/加号.png"></div>
+							</div>	
+								
+							<div class="opeBtn">
+								<div class="addCart" style="cursor: pointer;">加入购物车</div>
+								<div class="buy" style="cursor: pointer;"><a style="color: #FFFFFF;">立即购买</a></div><div class="collect" onclick="collit()"><img id="collectimg" style="margin-right: 5px;" src="../img/sckh.png"/>收藏</div>
+							</div>
+						</div>
+					</div>
+					<p style='clear:both'>
+						<span class='headline'>支付方式</span>
+						<a href='javascript:;' class='aliPay'><img src='../img/支付宝.png'></a>
+						<a href='javascript:;' class='weChatPay'><img src='../img/微信.png'></a>
+					</p>
+					<p class='package'>
+						<span class='headline'>净重</span>
+						<span class='norms'>200g</span>
+					</p>
+					<p>
+						<span class='headline'>毛重</span>
+						<span class='norms'>600g</span>
+					</p>
+					<p>
+						<span class='headline'>包装尺寸</span>
+						<span class='norms'>100cm × 100cm × 50cm</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class='information' style="margin-bottom: 30px;">
+			<ul class='tab'>
+				<li onclick="tab(this)" id="xiangqin" class='active specificNav tabItem'>详情</li>
+				<li onclick="tab(this)" id="pinlun" class='commentNav tabItem'><span>评价&nbsp;(999+)</span></li>
+			</ul>
+			<ul class='tabContent'>
+				<li class='specifics tabCon'>
+					<div class='maincon'>
+						<p class='brand'>品牌名称:三江源</p>
+						<em>产品参数</em>
+						<ul class='parameter'>	
+							<li>产品标准号：《中国药典》2015年版一部</li>
+							<li>厂名：三江源药业有限公司</li>
+							<li>厂址：玉树州结古镇扎西大通南路18号</li>
+							<li>联系方式:0931-8104537</li>
+							<li>配料表：青海玉树冬虫夏草</li>
+							<li>储藏方法:置于阴凉干燥通风处存放</li>
+							<li>保质期：730天</li>
+							<li>食品添加剂：无</li>
+							<li>冬虫夏草产地：青海省</li>
+							<li>净含量：1g</li>
+							<li>包装方式：散装</li>
+							<li>滋补品大小：2根/g</li>
+							<li>品牌：三江源</li>
+							<li>系列：青海玉树冬虫夏草</li>
+							<li>规格：2根/g</li>				
+							<li>产地：中国大陆</li>
+							<li>省份：青海省</li>
+							<li>城市：玉树藏族自治州</li>
+							<li>特产品类：青海冬虫夏草</li>
+							<li>适用对象：全部适用</li>					
+						</ul>
+					</div>
+					<div class='produceDate '>生产日期&nbsp;:&nbsp;2017-5-1</div>
+						<div style="margin-top: 25px;text-align: center;" class='graphicDetail'>
+							<img src='../img/宝贝详情1.png' />
+						</div>
+				</li>
+					
+				<li class=' commentC tabCon hide '>
+					<div class="commentSet">
+						<div class="allcomment com">
+							<div class="checkbox">
+								<input class="int"  type="checkbox" value="1" id="checkboxInput"/>
+								<label for="checkboxInput" ></label>
+							</div>
+							<span  style="font-size: 14px;color: #333333;float: right;margin-right: 20px;">全部（<span class="comNum">999+</span>）</span>
+						</div>
+						<div class="imgcomment com">
+							<div class="checkbox">
+								<input class="int" type="checkbox" value="1" id="checkboxIn"/>
+								<label for="checkboxIn" ></label>
+							</div>
+							<span style="font-size: 14px;color: #333333;float: right;margin-right: 80px;">有图</span>
+						</div>
+					</div>
+					<ul class="pinjialiebiao">
+						<li class="commentDetail">
+							<div class="cd_body">
+								<div class="user">
+									<div class="userimg">
+										<img src="../img/logo.png" alt="" />
+									</div>
+									<span class="username">大小大多</span>
+								</div>
+								<div class="comdetail">
+									<span class="comText">认可咖蒂凡尼宫东风观点我哦木筏的非官方的官方公告然后回头用户体验伊具郡个人体会让我和他结婚桃园结义如图集团军工兵为恶法全体会议误几回特具有溶前二个人听噶如果热我刚刚</span>
+									<div class="comimgList">
+										<div class="comimg">
+											<img src="../img/虫草1.png"/>
+										</div>
+										<div class="comimg">
+											<img src="../img/虫草1.png"/>
+										</div>
+										<div class="comimg">
+											<img src="../img/虫草1.png"/>
+										</div>
+										<div class="comimg">
+											<img src="../img/虫草1.png"/>
+										</div>
+										<div class="comimg">
+											<img src="../img/虫草1.png"/>
+										</div>
+									</div>
+									<span style="display: inline-block; font-size: 12px;margin-top: 30px; color: #666666;">规格：</span><span class="guige" style="font-size: 12px;margin-top: 30px; color: #666666;">2根/g</span>
+									<div class="comtime">
+										<span class="comdetailTime">2017-05-28</span>
+									</div>
+									
+								</div>
+							</div>
+							<div style="clear: both;">
+
+							</div>
+							
+						</li>	
+									
+					</ul>
+
+				</li >
+			
+			</ul>
+		</div>
+
+	<div id="page" class="hide"></div>
+		
+	
+	</div>	
+
+
+
+	
+	<div class="footdiv">
+		<div class="foothead">
+				<div class="footheadcontainer">
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+				</div>
+		</div>
+		<div class="footbody">
+			<div class="foot_list">
+				<span class="listtitle">购物指南</span>
+				<ul>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">会员介绍</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">联系客服</a></li>
+					<li><a href="">用户反馈</a></li>
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">配送方式</span>
+				<ul>
+					<li><a href="">门店自提</a></li>
+					<li><a href="">快递配送</a></li>
+
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">支付方式</span>
+				<ul>
+					<li><a href="">支付宝支付</a></li>
+					<li><a href="">微信支付</a></li>
+					
+				</ul>	
+				
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">售后服务</span>
+				<ul>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">退款说明</a></li>
+					<li><a href="">取消订单</a></li>
+				</ul>
+			</div>
+			<div class="code">
+				<span class="listtitle">三江源APP</span>
+				<div class="codeimg">
+					<img src="../img/微信截图_20170515153009.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="footbottom">
+			<p>
+				<a href="">关于我们</a>
+				<span class="spll">|</span>
+				<a href="">帮助中心</a>
+				<span class="spll">|</span>
+				<a href="">售后服务</a>
+				<span class="spll">|</span>
+				<a href="">配送与验收</a>
+				<span class="spll">|</span>
+				<a href="">企业采购</a>
+				<span class="spll">|</span>
+				<a href="">友情链接</a>
+			</p>
+			<p>
+				<a href="">京公安备11002305678088号</a>
+				<span class="spll">|</span>
+				<a href="">京ICP证070359号</a>
+				<span class="spll">|</span>
+				<a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="spll">|</span>
+				<a href="">食品经营许可证：123456468789321</a>
+				
+			</p>
+			<p>
+				<a href="">三江源公司版权所有@2017-2027</a>
+				<span class="spll">|</span>
+				<a href="">消费者维权热线4006067733</a>
+				<span class="spll">|</span>
+				<a href="">经营证照</a>			
+			</p>
+			<p style="margin-top: 24px;">
+				<a href=""><img src="../img/备案.png" alt="" /></a>
+				<a href=""><img src="../img/信用评价.png"/></a>
+				<a href=""><img src="../img/网络警察.png" alt="" /></a>
+				<a href=""><img src="../img/网路举报.png" alt="" /></a>
+				<a href=""><img src="../img/诚信网站.png" alt="" /></a>
+				<a href=""><img src="../img/举报中心.png" alt="" /></a>
+			</p>
+			
+		</div>
+	</div>
+	<div class="artModal fade" id="myModal_1">
+        <div class="artModal-dialog">
+            <div class="artModal-content">
+                <div class="custom_style">
+                	<!--设置样式-->
+                	<div class="loginbox">
+                			<div class="loginhead" style="line-height: 36px;background: #25B351; width: 100%;height: 36px;position: relative;">
+                				<span style="float: left;color: #fff;font-size: 16px;margin-left: 33px;">三江源</span>
+                				<img style="margin-right: 33px;cursor: pointer;margin-top: 9px; float: right;" class="closelogin" data-dismiss="artModal" src="../img/1取消.png"/>
+                				
+                			</div>
+                			
+                			<div style=" height: 18px;margin-left:33px;padding-right: 20px; line-height: 18px; font-size: 20px; color: #3c3c3c; margin-top: 35px; padding-bottom: 8px; font-weight: 700">密码登录</div>
+                			<div class="pas" style="display: none; width: 227px; font-size: 12px; margin-bottom: 12px; margin: 0 auto; height: 40px; margin-top: 20px; position: relative; background: #ffebeb; color: #e4393c; border: 1px solid #faccc6; padding: 3px 10px 3px 40px; line-height: 15px; height: auto;">
+				<b style="position: absolute; top: 50%; left: 10px; display: block; margin-top: -8px; width: 16px; height: 16px; overflow: hidden; background: url(../img/警示.png)center center no-repeat;"></b>
+				用户名与账户不匹配，请重新输入
+				<div style="clear: both;"></div>
+			</div>
+                			<div class="lobox" style="width: 300px;margin: 0 auto; height: 40px;margin-top:25px;border: 1px solid lightgray;">
+                				<i style="float: left;width: 40px;background-color: lightgray !important; height: 40px;background: url(../img/account-filling.png)center center no-repeat;border-right: 1px solid lightgray;"></i>
+                				<input class="loginUser" style="width: 248px;padding-left: 10px;height: 40px;line-height: 40px;" type="text" name="" id="" value="" placeholder="用户名"/>
+                			</div>
+                			
+                			<div style="width: 300px;margin: 0 auto; height: 40px;margin-top:25px;border: 1px solid lightgray;">
+                				<i style="float: left;width: 40px;background-color: lightgray !important; height: 40px;background: url(../img/密码.svg)center center no-repeat;border-right: 1px solid lightgray;"></i>
+                				<input class="loginPass" style="width: 248px;padding-left: 10px;height: 40px;line-height: 40px;" type="password" name="" id="" value="" placeholder="密码"/>
+                			</div>
+                			<div class="loginBtn" style="cursor: pointer;width: 300px; margin: 0 auto; height: 40px; margin-top: 25px; border-radius: 3px; background: #25B351; line-height: 40px; text-align: center;"><span style="font-size: 20px;font-weight: 500;color: #FFFFFF">登录</span></div>
+                		   <div style="text-align: right;padding-right: 33px;margin-top: 20px;">
+                		   		<a href="" style="color: #666666;font-size: 12px;">忘记密码</a>
+                		   		<a href="" style="color: #666666;font-size: 12px;">免费注册</a>
+                		   </div>
+                		   <div style="clear: both;"></div>
+                	</div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	
+	<script type="text/javascript" src="../js/fenye.js"></script>
+	<script type="text/javascript" src="../js/jquery.raty.js"></script>
+	<script type="text/javascript" src="../js/labs.js"></script>
+	<script type="text/javascript" src="../js/artMessage.js"></script>
+	<script type="text/javascript" src="../js/artModal.js"></script>
+	<script type="text/javascript" src="../js/detail.js"></script>
+	<script type="text/javascript">
+		
+	
+	/*选项卡*/	
+//		$('#page').hide();
+//		$('.tabItem').click(function(){
+//			$(this).addClass('active').siblings().removeClass('active');
+//			$('.tabCon').hide();
+////			$('.graphicDetail').hide();
+//			
+//			$('.tabCon').eq($(this).index()).show();
+//		})
+		function tab(el){
+			$(el).addClass('active').siblings().removeClass('active');
+			if(el.id=='xiangqin'){
+				$('.specifics').removeClass('hide').siblings().addClass('hide');
+				$('#page').addClass('hide');
+			}else if(el.id == 'pinlun'){
+				$('.commentC').removeClass('hide').siblings().addClass('hide');
+				$('#page').removeClass('hide');
+			}
+		}
+	
+	
+	/*商品图片*/
+	function forgoodimg(){
+		
+
+		function Enlarge(smallBox , bigBox , move , img , galleryInner , gallerySlide , arrowLeft , arrowRight) {
+	this.init(smallBox , bigBox , move , img, galleryInner , gallerySlide, arrowLeft , arrowRight);
+}
+Enlarge.prototype =  {
+	init: function(smallBox , bigBox , move , img, galleryInner , gallerySlide, arrowLeft , arrowRight) {
+		var that = this;
+		this.smallBox = smallBox ;
+		this.bigBox  = bigBox ; 
+		this.move = move ;
+		this.img = img ;
+		this.scale1 = this.scale2 = 2;
+		this.galleryInner = galleryInner || '';
+		this.gallerySlide = gallerySlide || '';
+		this.arrowLeft = arrowLeft;
+		this.arrowRight = arrowRight;
+		this.gallerySlideLi = this.gallerySlide.getElementsByTagName('li');
+		this.num = this.gallerySlideLi.length;
+		this.width = this.gallerySlideLi[0].offsetWidth;
+		if( this.checkShow() === -1 ) {
+			this.arrowLeft.style.display = this.arrowRight.style.display = 'none';
+		} else {
+			this.gallerySlide.style.width = this.num * this.width+ 190+ 'px';
+			this.index = 0;
+			this.arrowLeft.onclick = function() {
+				if( that.index === 0 ) {
+					return false;
+				} else {
+					that.prev();
+				}
+			};
+			this.arrowRight.onclick = function() {
+				if( that.index === that.num - 4 ) {
+					return false;
+				} else {
+					that.next();
+				}
+			}
+		}
+		this.smallBox.onmousemove = function(event) {
+			that.goMove(event);
+		};
+		this.smallBox.onmouseout = function() {
+			that.move.style.display = 'none';
+			that.bigBox.style.display = 'none';
+		};
+		for(var i = 0; i < this.gallerySlideLi.length ; i++ ) {
+			this.gallerySlideLi[i].onmouseover = function() {
+				that.smallBox.getElementsByTagName('img')[0].src = that.bigBox.getElementsByTagName('img')[0].src = this.getElementsByTagName('img')[0].src;
+			}
+		}
+	},
+	checkShow : function() {
+		if( this.gallerySlide == '' || this.galleryInner == '' ) {
+			return -1;
+		} else {
+			if ( this.width * this.num <= this.galleryInner.offsetWidth ) {
+				return 1;
+			}
+		}
+	},
+	prev : function() {
+		this.index--;
+		this.moveSlide(this.index);
+	},
+	next: function ()
+	{	
+		this.index++;
+		this.moveSlide(this.index);
+	},
+	moveSlide :function(index) {
+		var translate = - index  * this.width;
+		var oThis = this;
+		clearInterval(oThis.timer);
+		oThis.timer = setInterval(function () 
+		{
+			var iSpeed = (translate - oThis.gallerySlide.offsetLeft) / oThis.num;
+			iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+			if( iSpeed === 0 ) {
+				clearInterval(oThis.timer);
+			} else {
+				oThis.gallerySlide.style.left =  oThis.gallerySlide.offsetLeft + iSpeed + 'px';
+			}
+		}, 25);
+	},
+	showBigImg :function() {
+
+	},
+	goMove : function(event) {
+		var event = window.event || event;
+		var x = event.clientX ;
+		var y = event.clientY ;
+		this.move.style.display = this.bigBox.style.display = 'block';
+		x = x - this.smallBox.getBoundingClientRect().left - this.move.offsetWidth/2;
+		y =  y - this.smallBox.getBoundingClientRect().top -  this.move.offsetHeight/2;
+		if( x < 0) {
+			x = 0;
+		} else if ( x > this.smallBox.offsetWidth - this.move.offsetWidth) {
+			x =  this.smallBox.offsetWidth - this.move.offsetWidth;
+		}
+		if ( y < 0 ) {
+			y = 0;
+		} else if ( y > this.smallBox.offsetHeight - this.move.offsetHeight) {
+			y = this.smallBox.offsetHeight - this.move.offsetHeight;
+		}
+		this.move.style.left = x + 'px';
+		this.move.style.top = y + 'px';
+		this.bigBox.scrollLeft = this.scale1 * x;
+		this.bigBox.scrollTop = this.scale2 * y;
+	} 
+};
+var smallBox = document.getElementById('gallerySmall');
+var bigBox = document.getElementById('galleryBig');
+var galleryMove = document.getElementById('galleryMove');
+var galleryBigImg = document.getElementById('galleryBigImg');
+var galleryInner = document.getElementById('galleryInner');
+var gallerySlide = document.getElementById('gallerySlide');
+var arrowLeft = document.getElementById('arrowLeft');
+var arrowRight = document.getElementById('arrowRight');
+new Enlarge(smallBox , bigBox , galleryMove ,galleryBigImg, galleryInner, gallerySlide , arrowLeft , arrowRight);
+	}
+/*返回顶部*/
+$("#up").click(function(){
+				$('body,html').animate({scrollTop:0},500);
+//				return false;
+			});
+
+			
+			//分页器初始化
+		function getParameter(name) { 
+			var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); 
+			var r = window.location.search.substr(1).match(reg); 
+			if (r!=null) return unescape(r[2]); return null;
+		}
+		$(function(){
+			var totalPage = 50;
+			var totalRecords = 390;
+			var pageNo = getParameter('pno');
+			if(!pageNo){
+				pageNo = 1;
+			}
+			//生成分页
+			page.generPageHtml({
+				pno : pageNo,
+				//总页码
+				total : totalPage,
+				//总数据条数
+				totalRecords : totalRecords,
+				//链接前部
+				hrefFormer : 'pager_test_orange_color',
+				isGoPage 			: false,	//是否显示页码跳转输入框
+				isShowLastPageBtn	: true, //是否显示尾页按钮	
+				isWrapedPageBtns	: false,	//是否用span包裹住页码按钮
+				isWrapedInfoTextAndGoPageBtn : false, //是否用span包裹住分页信息和跳转按钮
+				isShowCurrPage		: false,//是否显示当前页
+				isShowTotalPage 	: false, //是否显示总页数
+				//链接尾部
+				hrefLatter : '.html',
+				getLink : function(n){
+					return this.hrefFormer + this.hrefLatter + "?pno="+n;
+				}
+			})	
+		})	
+		//收藏
+//		function collit(){
+//			var src = document.getElementById('collectimg').src;
+//			var srcImgs = src.split("/");
+//			var srcImg = '';
+//			for(var i = 0;i<srcImgs.length;i++){
+//				if(i == srcImgs.length - 1){
+//					srcImg = srcImgs[i];
+//				}
+//			}
+//			if(srcImg == "sckh.png"){
+//				document.getElementById('collectimg').src='../img/scsh.png';
+////				console.log(1234);
+////				break;
+//			}else if(srcImg == "scsh.png"){
+////				console.log(4321);
+//				document.getElementById('collectimg').src='../img/sckh.png';
+//			}
+//		}
+			
+			
+		$('.int').click(function(){
+			$(this).parents(".checkbox").parents(".com").siblings(".com").find(".checkbox input").removeAttr('checked');
+		})
+	</script>
+</body>

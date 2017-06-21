@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<head>
+	<script type="text/javascript" src="js/h5.js" async></script>
+	<!--<script type="text/javascript" src="js/classlist.js" async></script>
+	<script type="text/javascript" src="js/es5-sham.min.js" async></script>
+	<script type="text/javascript" src="js/es5-shim.min.js" async></script>-->
+	<!--<script type="text/javascript" src="js/ieobject.js" async></script>-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+	<meta charset="utf-8"/>
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="viewport" content="width=1224"/>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/com.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+	<link rel="stylesheet" href="css/artMessage.css" />
+	<script type="text/javascript">
+		try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }
+	</script>
+</head>
+<body>
+	<div class="rfloat" style="background: #fff; width: 60px;border-radius: 2px; height: 184px;position: fixed;top: 60%;right: 1%;z-index: 60;border: 1px solid grey;">
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="img/xf客服.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">联系客服</span>
+		</div>
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="img/xf下载.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">下载APP</span>
+		</div>
+		<div id="up" style="width: 100%;height: 60px;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="img/xf返回顶部.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">返回顶部</span>
+		</div>
+	</div>
+	<div class="mainbox">
+	<div class="site-top">
+		<div class="topcontainer">
+			<div class="topnav">
+				<a href="http://sjyyy.com/">三江源官网</a>
+				<span class="spl">|</span>
+				<a href="index.html">三江源网上商城</a>
+				<span class="spl">|</span>
+				<a href="html/shoplist.html">线下门店</a>
+			</div>
+			<a href="html/shopcar.html">
+				<div class="shopcar">
+					<img src="img/cart.png"alt="" />
+					<span style="position: relative;margin-left: 60px;">购物车</span>
+					<span class="car_mini_num"></span>
+				</div>
+			</a>
+			
+			<div class="topbar-info">
+				<span id="muid" class="myUserid" style="padding-right: 47px; cursor: pointer; text-align: center; background: url(img/个人中心上.png)86% center no-repeat; background-size: 15px;" ></span>
+				<!--<a href="html/login.html" class="signout" style="margin-right: 20px;">退出登录</a>-->
+				<div class="userdrow">
+					<div style="width: 100%;height: 6px;background: url(img/指向三角.png)center center no-repeat;"></div>
+					<div class="udbox">
+						<ul>
+							<li><a href="html/myinfo.html">个人资料</a></li>
+							<li><a href="html/addressMan.html">地址管理</a></li>
+							<li><a href="html/acSafe.html">账户与安全</a></li>
+							<li><a href="html/myorder.html">我的订单</a></li>
+							<li><a href="html/mycollet.html">我的收藏</a></li>
+							<li><a href="html/myconpon.html">我的优惠券</a></li>
+							<li><a href="html/mysaleafter.html">我的售后</a></li>
+							<li><a href="html/mycom.html">我的评价</a></li>
+							<li><a href="html/contactservice.html">联系客服</a></li>
+							<li style="cursor: pointer;" class="signout"><a >退出账号</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<span class="spl">|</span>
+				
+				<a href="html/myorder.html">我的订单</a>
+				
+			</div>
+			<div class="lbox" style="display: inline-block; height: 100%; float: right; line-height: 40px;">
+					<a href="html/login.html">登录</a> 
+					<span class="spl">|</span>
+					<a href="register.html">注册</a>
+
+				</div>
+			
+		</div>
+	</div>
+	<div class="home_first">
+		<div class="home_first_content">
+			<div class="logo">
+				<img src="img/logo.png"/>
+			</div>
+			<a class="hfc_link borderbottom">首页</a>
+			<a href="" class="hfc_link">仙草预售</a>
+			<a href="html/searchResult.html" class="hfc_link">爆款虫草</a>
+			<a href="html/distinguish.html" class="hfc_link">虫草鉴别</a>
+			<a href="html/distinguish.html" class="hfc_link">虫草故事</a>
+			<div class="search">
+				<input type="" name="" id="" value="" placeholder="搜索"/>
+				<div class="searchSubmit">
+					<img src="img/搜索-搜索.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home_second">
+		<div class="home_second_content">
+			<div class="leftnav">
+				<ul class="banner_menu_wrap">
+					<!--<li class="banner_menu_wrap_li" style="position: relative;line-height: 60px !important;">
+						<img src="img/虫草.png" style="position: absolute;margin: auto;top: 0;left: 10px;right: 170px;bottom: 0;"/>
+						<a class="dalei" style="margin-left: 60px;">冬虫夏草</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 600px;">
+							<ul class="banner_menu_content_ul">
+								<li><a href="">黄芪</a></li>
+	
+							</ul>
+							
+							
+						</div>
+					</li>
+					<li class="banner_menu_wrap_li" style="position: relative;line-height: 60px !important;">
+						<img src="img/虫草.png" style="position: absolute;margin: auto;top: 0;left: 10px;right: 170px;bottom: 0;"/>
+						<a class="dalei" style="margin-left: 60px;">冬虫夏草</a>
+						<a class="banner_menu_i">></a>
+						<div class="banner_menu_content" style="width: 600px;">
+							<ul class="banner_menu_content_ul">
+								<li><a href="">黄芪</a></li>
+								<li><a href="">当归</a></li>
+								<li><a href="">锁阳</a></li>
+								<li><a href="">党参</a></li>
+								<li><a href="">枸杞</a></li>
+								<li><a href="">黑枸杞</a></li>
+								<li><a href="">人参果</a></li>
+								<li><a href="">天山雪莲</a></li>
+								<li><a href="">红景天</a></li>
+								<li><a href="">大黄茶</a></li>
+								<li><a href="">党参</a></li>
+								<li><a href="">枸杞</a></li>
+								
+								
+							</ul>
+							
+							<ul class="banner_menu_content_ul">
+								
+								<li><a href="">黄芪</a></li>
+								<li><a href="">当归</a></li>
+								<li><a href="">锁阳</a></li>
+								<li><a href="">党参</a></li>
+								<li><a href="">枸杞</a></li>
+								<li><a href="">黑枸杞</a></li>
+								<li><a href="">人参果</a></li>
+								<li><a href="">天山雪莲</a></li>
+								<li><a href="">红景天</a></li>
+								<li><a href="">大黄茶</a></li>
+								<li><a href="">党参</a></li>
+								<li><a href="">枸杞</a></li>
+							</ul>
+						</div>
+					</li>-->
+					
+				</ul>
+			</div>
+			<div id="rightswipe" class="rightswipe">
+				<ul class="main-carousel">
+		            <li class="main-item  cur"><img src="img/首页轮播1.png"/></li>
+		            <li class="main-item "><img src="img/首页轮播2.png" alt="" /></li>
+		            <li class="main-item "><img src="img/首页轮播3.png"/></li>
+		            <!--<li class="main-item main-item-4">第四张</li>-->
+		        </ul>
+		        <div class="main-trigger">
+		            <!--<i class="trigger-item active"></i>
+		            <i class="trigger-item"></i>-->
+		            <!--<i class="trigger-item"></i>-->
+		            <!--<i class="trigger-item"></i>-->
+		        </div>
+		       <i class="prev-btn">
+		     
+		       		<img src="img/轮播左箭头.png"/>
+		      
+		       	
+		       </i>
+		        <i class="next-btn">
+
+		        	  		<img src="img/轮播右键头.png"/>
+
+		        </i>
+			</div>
+		</div>
+	</div>
+	<div class="home_three">
+		<!--<div class="htwidth" style="float: left;">
+			<img src="img/优惠1.png"/>
+		</div>-->
+<!--		
+		<div class="quan" style="text-align: center;position: relative; float: left;background: #ef885a;">
+			<div style="position: absolute;right: 0; width: 0; height: 0; border-top: 35px solid #fbe8df; border-left: 35px solid transparent;color: #f66525;text-align: center;"><span style="position:absolute;top: -35px;right: 0;">券</span></div>
+			<span style="width: 100%;margin-top: 16px; color: #fff;font-size: 20px;display: block;">满29元使用</span>
+			<div style="width: 100%;height: 80px;line-height: 80px; text-align: center;">
+				<span style="font-size: 20px;color: #fff;">￥</span><span style="font-size: 80px;color: #fff;">5</span>
+			</div>
+
+			<div style="width: 160px;text-align: center;border-radius:15px;height: 30px;line-height: 30px; background: #FFFFFF;margin: 0 auto; color: #ef885a;cursor: pointer;font-size: 20px;">点击领取</div>
+			
+		</div>-->
+		<div id="kongquan" style="float: right;"></div>
+		<div style="clear: ;"></div>
+		
+	</div>
+	<div class="home_four" id="head_hot_goods_wrap">
+		<div id="head_hot_goods_title">
+			<span class="title_span">品牌热销</span>
+			<div id="head_hot_goods_change">
+				<span id="head_hot_goods_prave" style="color: rgb(224, 224, 224); cursor: default;">&lt;</span>
+				<span id="head_hot_goods_next" style="color: rgb(190, 190, 190); cursor: pointer;">&gt;</span>
+			</div>
+		</div>
+		<div id="head_hot_goods_content">
+						<ul id="rexiao" class="rexiao" style="left: 0px;">
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+										<!--<span class="spll">|</span>-->
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:hg()">
+									<div class="hhgc_img">
+										<img src="img/黑枸杞.png"/>
+									</div>
+									<span class="hhgc_goods_name">三江源野山参</span>
+									<span class="hhgc_goods_secondName">一二三四五六七八九三二一</span>
+									<span class="hhgc_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+									<div class="hhgc_sale_com">
+										<div class="startDiv">
+											<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+												(999+)	
+											</span>
+										</div>
+										<div class="sales">
+											销量：<span>(1660)</span>
+										</div>
+					
+									</div>
+								</a>
+							</li>
+							
+							
+							
+						</ul>
+		</div>
+	</div>
+	
+
+<div class="home_five">
+			<div class="hf_five">
+				<div class="hfo_title">
+					<span class="hfot_span">养生尊礼</span>
+					<div class="checkMore">
+						<span class="morespan"><a href="html/fenlei.html">查看更多</a></span>
+						<img src="img/更多.png"/>
+					</div>
+				</div>
+				<div class="hfo_body">
+					<div class="hfob_left">
+						<img src="img/虫草左.png" alt="" />
+					</div>
+					<div class="hfob_right">
+						<div class="hfobr_div">
+							<div class="hfo_good_img">
+								<img src="img/虫草1.png"/>
+							</div>
+							<span class="hfo_good_name">三江源野山参</span>
+							<span class="hfo_good_secondname">一二三四五六七八九十三三三</span>
+							<span class="hfo_goods_price"><span>￥</span><span class="pricenum">388</span></span>
+							<div class="hfo_sale_com">
+											<div class="hfo_starDiv">
+												<span style="font-size: 12px; color: #333333;display: inline-block;float: right;" class="pinlunnum">
+													(999+)	
+												</span>
+											</div>
+											<div class="sales">
+												销量：<span>(1660)</span>
+											</div>
+										</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="Ad">
+				<img src="img/广告.png"/>
+			</div>
+	</div>
+
+	</div>
+	<div class="footdiv">
+		<div class="foothead">
+				<div class="footheadcontainer">
+					<div class="foottitle">
+						<img src="img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+				</div>
+		</div>
+		<div class="footbody">
+			<div class="foot_list">
+				<span class="listtitle">购物指南</span>
+				<ul>
+					<li><a href="javascript:hg()">购物流程</a></li>
+					<li><a href="">会员介绍</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">联系客服</a></li>
+					<li><a href="">用户反馈</a></li>
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">配送方式</span>
+				<ul>
+					<li><a href="">门店自提</a></li>
+					<li><a href="">快递配送</a></li>
+
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">支付方式</span>
+				<ul>
+					<li><a href="">支付宝支付</a></li>
+					<li><a href="">微信支付</a></li>
+					
+				</ul>	
+				
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">售后服务</span>
+				<ul>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">退款说明</a></li>
+					<li><a href="">取消订单</a></li>
+				</ul>
+			</div>
+			<div class="code">
+				<span class="listtitle">三江源APP</span>
+				<div class="codeimg">
+					<img src="img/微信截图_20170515153009.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="footbottom">
+			<p>
+				<a href="">关于我们</a>
+				<span class="spll">|</span>
+				<a href="">帮助中心</a>
+				<span class="spll">|</span>
+				<a href="">售后服务</a>
+				<span class="spll">|</span>
+				<a href="">配送与验收</a>
+				<span class="spll">|</span>
+				<a href="">企业采购</a>
+				<span class="spll">|</span>
+				<a href="">友情链接</a>
+			</p>
+			<p>
+				<a href="">京公安备11002305678088号</a>
+				<span class="spll">|</span>
+				<a href="">京ICP证070359号</a>
+				<span class="spll">|</span>
+				<a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="spll">|</span>
+				<a href="">食品经营许可证：123456468789321</a>
+				
+			</p>
+			<p>
+				<a href="">三江源公司版权所有@2017-2027</a>
+				<span class="spll">|</span>
+				<a href="">消费者维权热线4006067733</a>
+				<span class="spll">|</span>
+				<a href="">经营证照</a>			
+			</p>
+			<p style="margin-top: 24px;">
+				<a href=""><img src="img/备案.png" alt="" /></a>
+				<a href=""><img src="img/信用评价.png"/></a>
+				<a href=""><img src="img/网络警察.png" alt="" /></a>
+				<a href=""><img src="img/网路举报.png" alt="" /></a>
+				<a href=""><img src="img/诚信网站.png" alt="" /></a>
+				<a href=""><img src="img/举报中心.png" alt="" /></a>
+			</p>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/ajuanCarousel-1.0.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.js"></script>
+	<script type="text/javascript" src="js/labs.js"></script>
+	<script type="text/javascript" src="js/artMessage.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+	<script type="text/javascript">
+		var _a = window.Ajuan || window.jQuery || window.Zepto;
+        _a('#rightswipe').AjuanCarousel({
+            mode:'custom',
+            custom:{
+                active:'cur'
+            },
+            trigger:{
+                triEleName:'.main-trigger'
+            },
+            btn:{
+                prevEleName:'.prev-btn',
+                nextEleName:'.next-btn'
+            }
+        });
+        
+        	$("#head_hot_goods_prave").on("click", function() {
+					$("#head_hot_goods_content ul").css("left", "0px");
+					$(this).css({
+						"color": "#E0E0E0",
+						"cursor": "default"
+					});
+					$("#head_hot_goods_next").css({
+						"color": "#BEBEBE",
+						"cursor": "pointer"
+					});
+				})
+				$("#head_hot_goods_next").on("click", function() {
+					$("#head_hot_goods_content ul").css("left", "-1236px");
+					$(this).css({
+						"color": "#E0E0E0",
+						"cursor": "default"
+					});
+					$("#head_hot_goods_prave").css({
+						"color": "#BEBEBE",
+						"cursor": "pointer"
+					});
+				})
+				
+					
+			$('.startDiv').raty({
+				//Down: score <= x.25 the star will be rounded down;
+				//Half: score >= x.26 and <= x.75 the star will be a half star;
+				//Up: score >= x.76 the star will be rounded up.
+				score:5,
+				//仅作展示
+				readOnly:true,
+				//change down,half,up rules
+				//round : { down: .26, full: .6, up: .76 },
+//				click: function(score, evt) {
+//				    
+//				  }
+			});
+			$('.hfo_starDiv').raty({
+				score:5,
+				readOnly:true
+			})
+			$("#up").click(function(){
+				$('body,html').animate({scrollTop:0},500);
+
+			});
+			$('.hfobr_div').click(function(){
+				window.location.href="html/detail.html";
+			});
+			function hg(){
+				window.location.href="html/detail.html";
+			}
+	</script>
+</body>

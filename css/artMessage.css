@@ -1,0 +1,145 @@
+.artMessage-wrapper{position:fixed;top:50%;left:0;width:100%;
+    _position:absolute;_top:expression(documentElement.scrollTop);
+}
+.artMessage-item{padding:8px;text-align:center;}
+.artMessage-item .artMessage-content{display:inline-block;padding:8px 16px;border-radius:4px;background:#fff;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,.2);
+    *width:300px;
+}
+.artMessage-item .artMessage-content i{position:relative;top:1px;display:inline-block;margin-right:8px;width:16px;height:16px;font-size:0;background-image:url(../img/artMessage.png);background-repeat:no-repeat;}
+.artMessage-item .artMessage-content i.success{background-position:0 0;}
+.artMessage-item .artMessage-content i.error{background-position:-16px 0;}
+.artMessage-item .artMessage-content i.warn{background-position:-32px 0;}
+.artMessage-item .artMessage-content i.info{background-position:-48px 0;}
+.artMessage-item .artMessage-content i.loading{background-image:url(../img/artMessage_loading.gif) !important;background-repeat:no-repeat;}
+.artMessage-item .artMessage-content span{}
+
+.artMessage-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000000;opacity:0.05;filter:alpha(opacity=5);
+    _position:absolute;_top:expression(documentElement.scrollTop);_width:expression(documentElement.clientWidth);_height:expression(documentElement.clientHeight);
+}
+
+/*进入*/
+.move-up-enter {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.move-up-enter.move-up-enter-active {
+    -webkit-animation-name: antMoveUpIn;
+    animation-name: antMoveUpIn;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+@-webkit-keyframes antMoveUpIn {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes antMoveUpIn {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/*离开*/
+.move-up-leave {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.move-up-leave.move-up-leave-active {
+    -webkit-animation-name: antMoveUpOut;
+    animation-name: antMoveUpOut;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+@-webkit-keyframes antMoveUpOut {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+@keyframes antMoveUpOut {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+.artMessage-item.move-up-leave.move-up-leave-active {
+    -webkit-animation-name: MessageMoveOut;
+    animation-name: MessageMoveOut;
+    overflow: hidden;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+@-webkit-keyframes MessageMoveOut {
+    0% {
+        opacity: 1;
+        max-height: 150px;
+        padding: 8px;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+    }
+}
+@keyframes MessageMoveOut {
+    0% {
+        opacity: 1;
+        max-height: 150px;
+        padding: 8px;
+    }
+    100% {
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+    }
+}

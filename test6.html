@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>分享页面</title>
+		<meta name="viewport" content="width=750px,user-scalable=no">
+        <style>
+        	.logo_content{width: 85%;height: 22rem; margin: 0 auto;margin-top: 5rem;font-size: 2rem;}
+        	.logo_tel>input{width: 100%;height: 5rem;margin-bottom: 3rem;border: 1px solid #51b8c0;border-radius: 2rem;font-size: 2rem;}
+			.logo_yzm>input{width: 56%;height: 5rem;border: 1px solid #51b8c0;border-radius: 2rem;font-size: 2rem;}
+			.logo_yzm>.validate_button{width: 40%;height: 5rem;background: #51b8c0;float: right;color: #FFFFFF;line-height: 2.4;text-align: center;border: 1px solid #51b8c0;cursor: pointer;border-radius: 2rem;}
+			.logo_yzm>.hidden_button{width: 40%;height: 5rem;background: #CCCCCC;float: right;color: #FFFFFF;line-height: 2.5;text-align: center;border: 1px solid #CCCCCC;cursor: pointer;border-radius: 2rem;display: none;font-size: 2rem;}
+        </style>
+	</head>
+
+	<body>
+		<section class="logo_content">
+			<div class="logo_tel">
+				<input type="text" placeholder="&nbsp; 请输入手机号" id="tel" />
+			</div>
+			<div class="logo_yzm">
+				<input type="text" placeholder="&nbsp; 请输入验证码" id="yzm" />
+				<div class="validate_button">获取验证码</div>
+				<div class="hidden_button">
+					<span></span>
+					<em>S后内失效</em>
+				</div>
+			</div>
+		</section>
+	        <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//获取验证码
+				$(".validate_button").click(function() {
+					$(".hidden_button span").text(60);
+					$(this).hide();
+					$(".hidden_button").show();
+					var icount = 59;
+					var time = setInterval(auto, 1000);
+
+					function auto() {
+						$(".hidden_button span").text(icount);
+						icount--;
+						if(icount == 0) {
+							clearTimeout(time);
+							$(".validate_button").show();
+							$(".hidden_button").hide();
+						}
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

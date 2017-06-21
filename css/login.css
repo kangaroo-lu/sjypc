@@ -1,0 +1,106 @@
+#login{
+	height: 470px;
+	position: relative;
+}
+#loginBgImg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 470px;	
+}
+
+#loginBgImg>img{
+	width: 100%;
+	height: 100%;
+}
+#loginBox{
+	width: 280px;
+	/*height: 256px;*/
+	padding: 30px 40px;
+	position: absolute;
+	right: 400px;
+	top:50%;
+	margin-top:-158px;
+	background: #ffffff;
+}
+
+#loginBox>h4{
+	font-size: 20px;
+	color: #333333;
+	line-height: 1em;
+	margin-bottom: 30px;
+}
+
+.loginForm{
+
+}
+
+.loginForm>p{
+	height: 40px;
+	margin-bottom: 16px;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+}
+
+.loginForm>p>span{
+	float: left;
+	width: 10px;
+	height: 100%;
+	line-height: 38px;
+	padding-left: 40px; 
+	font-size: 25px;
+	color: #dddddd;
+}
+
+#login .accountIcon{
+	background: url(../img/登录账号.png) no-repeat 12px 10px;
+}
+
+#login .passIcon{
+	background: url(../img/登录密码.png) no-repeat 12px 12px; 
+}
+#login input{
+	float: left;
+	height: 38px;	
+	border-radius: 2px;
+}
+
+#login input::-webkit-input-placeholder {
+　　color: #666666 ; 
+	font-size: 14px;
+}
+
+#login input::-moz-placeholder {
+　　color: #666666 ; 
+	font-size: 14px;
+}
+
+#login input::-ms-input-placeholder {
+　　color: #666666; 
+	font-size: 14px;
+}
+
+#login .loginBtn{
+	margin: 24px auto 10px;
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #289a4c;
+}
+
+#login .forgetPassword{
+	float: left;
+}
+
+#login .registerNewAccount{
+	float: right;
+}
+
+.footbottom{
+	position:
+}

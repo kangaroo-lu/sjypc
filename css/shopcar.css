@@ -1,0 +1,540 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: "微软雅黑";
+	/*color: #333 !important;*/
+	background: #fff;
+	min-width: 1224px;
+	/*display: block;*/
+}
+a{
+	text-decoration: none;
+	color: #F5F5F5;
+}
+.borderbottom{
+	border-bottom:1px solid black ;
+}
+li{
+	list-style: none;
+}
+.site-top{
+	margin-left:auto;
+	margin-right: auto;
+	width: 100%;
+	height: 40px;
+	font-size: 12px;
+	color: #f5f5f5;
+	background: #666666;
+	position: relative;
+}
+.topcontainer{
+	/*background: cornflowerblue;*/
+	width: 1224px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.topcontainer .topnav{
+	float: left;
+	line-height: 40px;
+	overflow: hidden;
+}
+.spl{
+	margin: 0.5em;
+}
+.topbar-info{
+	float: right;
+	line-height: 40px;
+	overflow: hidden;
+}
+.shopcar{
+	/*display: inline-block;*/
+	background: #1d8c40; 
+	width: 160px;
+	float: right;
+	margin-left: 20px;
+	position:relative !important;
+	height: 40px;
+	line-height: 40px;
+}
+.shopcar img{
+	width: 15%;
+	/*height: 100%;*/
+	display: inline-block;
+	/*background: red;*/
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	bottom: 0;
+	right: 0;
+}
+/***************nav end************************/
+/***********************二级导航***************************/
+.home_first{
+	width: 100%;
+	height: 110px;
+	line-height: 110px;
+	position: relative;
+}
+.home_first_content{
+	width: 1224px;
+	margin: 0 auto;
+	height: 110px;
+	line-height: 110px;
+	position: relative;
+}
+.logo{
+	margin-top: 2%;
+	width: 60px;
+	height: 60px;
+	float: left;
+	position: relative;
+	display: inline-block;
+}
+.logo img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;left: 0;
+	right: 0;
+}
+.hfc_link{
+	width: auto;
+	font-size: 18px;
+	color: #333;
+	height: 32px;
+	position: relative;
+	line-height: 32px;
+	/*float: left;*/
+	margin-left: 40px;
+	padding: 5px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+}
+.search{
+	width: 310px;
+	height: 50px;
+	position: relative;
+	float: right;
+	margin-top: 2%;
+	border: 2px solid green;
+	line-height: 50px;
+}
+.search input{
+	width: 250px;
+	height: 50px;
+	position: relative;
+	padding-left: 5px;
+	float: left;
+	line-height: 50px;
+	border: none;
+}
+.search .searchSubmit{
+	width: 50px;
+	height: 100%;
+	float: right;
+	position: relative;
+	border-left: 2px solid green;
+}
+.search .searchSubmit img{
+	position: absolute;
+	/*width: 100%;*/
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+/************************carlist start***************************/
+.carlist{
+	width: 1224px;
+	position: relative;
+	margin: 0 auto;
+	/*height: 300px;*/
+	border: 1px solid darkgray;
+}
+.carhead{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	font-size: 14px;
+	color: #333333;
+	background: #F5F5F5;
+}
+.select{
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	position: relative;
+	margin-left: 40px;
+	border: 1px solid grey;
+	float: left;
+	/*-webkit-appearance: none;*/
+    transition: background-color ease 0.1s;
+}
+.selectLi{
+	width: 20px;
+	height: 20px;
+	margin-top:64px;
+	position: relative;
+	/*margin-left: 40px;*/
+	border: 1px solid grey;
+	float: left;
+	/*-webkit-appearance: none;*/
+	/*-moz-appearance: none;*/
+    transition: background-color ease 0.1s;
+}
+input[type="checkbox"]:disabled {
+            opacity: 1 !important;
+        }
+.hasselect{
+	background: #FFF url(../img/绿勾.png) !important;
+	background-position: center !important;
+    background-repeat: no-repeat !important;
+    /*background-size: 100% 100% !important;*/
+    border: solid 1px gainsboro !important;
+}
+.quanxuan{
+	margin-left: 20px;
+}
+.danjia,.shuliang,.xiaoji{
+	width: 200px;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	/*border-left:1px solid black ;*/
+}
+.xiaoji{
+	margin-right: 150px;
+}
+.listdetail{
+	width: 1144px;
+	margin: 0 auto;
+	position: relative;
+}
+.goodLi{
+	width: 100%;
+	height: 140px;
+	border-bottom: 1px dotted darkgrey;
+	/*line-height: 140px;*/
+	position: relative;
+}
+.goodCar_img{
+	width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.goodCar_img img{
+	width: 100%;
+	display: block;
+}
+.goodCar_info{
+	height: 50px;
+    position: relative;
+    width: 250px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 44px;
+
+    float: left;
+}
+.goodCar_goodName{
+	font-size: 14px;
+	color: #333333;
+	/*text-align: center;*/
+	display: block;
+}
+.goodCar_goodInfo{
+	font-size: 12px;
+	color: #666666;
+	display: block;
+	margin-top: 15px;
+}
+.goodCar_goodPrice{
+	width: 200px;
+	text-align: center;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	margin-left: 32px;
+
+	float: left;
+}
+.pricebox{
+	width: 100px;
+    height: 20px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 32%;
+}
+.goodCar_numberchioce{
+	width: 200px;
+	height: 100%;position: relative;
+	display: inline-block;
+	float: left;
+		
+}
+.numberSelect{
+	width: 120px;
+	height: 32px;
+	border: 1px solid grey;
+	/*margin: 0 auto;*/
+	position: absolute;
+	/*margin-top: 26%;*/
+	left: 20%;
+	overflow: hidden;
+	top: 40%;
+}
+#reduce{
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	outline: none;
+	float: left;
+	border: none;
+	position: relative;
+	/*background-color:#FFFFFF;*/
+	background: url(../img/减号深.png)center center no-repeat !important;  
+}
+#reduce img{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.number{
+	width: 56px;
+	height: 32px;
+	border: none;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+#add{
+	cursor: pointer;
+	background: url(../img/加号.png)center center no-repeat !important;
+	outline: none;
+	width: 32px;
+	border: none;
+	height: 32px;
+	position: relative;
+
+}
+#add img{
+	/*width: 40%;*/
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.goodCar_countPrice{
+	width: 200px;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	/*background: cornflowerblue;*/
+	display: inline-block;
+	float: left;
+}
+.goodCar_del{
+	width: 110px;
+	height: 140px;
+	line-height: 140px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	/*background: red;*/
+	text-align: center;
+}
+.del:hover{
+	background: url(../img/删除按钮鼠标效果.png)no-repeat center center !important;
+}
+
+.listfoot{
+	width: 1224px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
+	background: #F5F5F5;
+	margin-top: 30px;
+}
+.footselect{
+	width: 20px;
+	height: 20px;
+	margin-top: 32px;
+	position: relative;
+	margin-left: 40px;
+	border: 1px solid grey;
+	float: left;
+	/*-webkit-appearance: none;*/
+    transition: background-color ease 0.1s;
+}
+.goodCarF_select{
+	display: inline-block;
+	width: auto;
+	font-size: 14px;
+	color: #333333;
+	margin-left: 20px;
+	margin-top: 32px;
+}
+.delectAll{
+	width: auto;
+	font-size: 14px;
+	color: #333;
+	display: inline-block;
+	margin-left: 64px;
+	margin-top: 32px;
+}
+.orderSubmit{
+	width: 180px;
+	height: 100%;
+	line-height: 80px;
+	background: #f9442f;
+	float: right;
+	font-size: 22px;
+	color: #FFFFFF;
+	text-align: center;
+	display: inline-block;
+}
+.priceinfo{
+	padding-top: 5px;
+	height: 100%;
+	float: right;
+	margin-right: 50px;	
+}
+.payprice{
+	font-size: 24px;
+	color: #F9442F;
+}
+/******************foot start**********************/
+.footdiv{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.foothead{
+	width: 100%;
+	position: relative;
+	height: 80px;
+	background: #eeeeee;
+	margin-bottom: 32px;
+	margin-top: 58px;
+}
+.footheadcontainer{
+	width: 1224px;
+	position: relative;
+	line-height: 80px;
+	height: 80px;
+	margin: 0 auto;
+
+	/*margin-left: auto;
+	margin-right: auto;*/
+	/*background: yellow;*/
+}
+.footheadcontainer .foottitle{
+	position: relative;
+	width: 306px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+	text-align: center;
+	
+	/*margin-right: 1%;*/
+	/*border: 1px black solid;*/
+	/*background: cadetblue;*/
+}
+.footheadcontainer .foottitle .titlecontent{
+	font-size: 20px;
+	font-weight: 700;
+	font-family: "宋体";
+	position: relative;
+	margin-left: 80px;
+	/*float: right;*/
+}
+.footheadcontainer .foottitle img{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	bottom: 0;
+	right: 0;
+}
+.footbody{
+	width: 1224px;
+	margin: 0 auto;
+	/*background: cornflowerblue;*/
+	height: 200px;
+	border-bottom: 1px solid gray;
+
+}
+.foot_list{
+	float: left;
+	width: 281px;
+	height: 200px;
+	line-height: 22px;
+	/*background: lightblue;*/
+}
+.foot_list .listtitle{
+	font-size: 20px;
+	margin-bottom: 12px !important;
+	display: block;
+}
+.code .listtitle{
+	font-size: 20px;
+	margin-bottom: 12px !important;
+	display: block;
+}
+.foot_list ul li{
+	margin-bottom: 12px;
+}
+.foot_list ul li a{
+	color: #666666 !important;
+	font-size: 16px !important;	
+}
+.code{
+	float: right;
+	width: 100px;
+}
+.codeimg{
+	position: relative;
+	width: 100%;
+}
+.codeimg img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.footbottom{
+	padding-top: 24px;
+	width: 1224px;
+	margin: 0 auto;
+	height: 200px;
+	/*background: cornflowerblue;*/
+	text-align: center;
+}
+.footbottom p{
+	margin-bottom: 16px;
+}
+.footbottom p a{
+	color: #999999;
+	font-size: 12px;
+}
+.spll{
+	margin: 0.5em;
+	color: #999999;
+}

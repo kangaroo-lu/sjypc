@@ -1,0 +1,122 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>表单数据的回显</title>
+		<script type="text/javascript">
+			function show() {
+				//姓名
+				var name = document.getElementById("name").value;
+				document.getElementById("name2").value = name;
+				//性别
+				var genders = document.getElementsByName("gender");
+				//var genders=document.testform.gender;//这样取值也可以
+				var checkedgender;
+				for(var i = 0; i < genders.length; i++) {
+					if(genders[i].checked) {
+						checkedgender = genders[i].value;
+						break;
+					}
+				}
+				var genders2 = document.getElementsByName("gender2");
+				for(var i = 0; i < genders2.length; i++) {
+					if(checkedgender == genders2[i].value) {
+						genders2[i].checked = true;
+						break;
+					}
+				}
+				//学历
+				var xue = document.getElementById("select").options;
+				var checkedxue;
+				for(var i = 0; i < xue.length; i++) {
+					if(xue[i].selected) {
+						checkedxue = xue[i].value;
+						break;
+					}
+				}
+				var xue2 = document.getElementById("select2").options;
+				for(var i = 0; i < xue2.length; i++) {
+					if(checkedxue == xue2[i].value) {
+						xue2[i].selected = true;
+						break;
+					}
+				}
+				//技能
+				var its = document.getElementsByName("it");
+				var checkedit = new Array();
+				for(var i = 0; i < its.length; i++) {
+					if(its[i].checked) {
+						checkedit.push(its[i].value);
+					}
+				}
+				var its2 = document.getElementsByName("it2");
+				for(var i = 0; i < its2.length; i++) {
+					if(checkedit.length == 0) {
+						its2[i].checked = false;
+					} else {
+						for(var j = 0; j < checkedit.length; j++) {
+							if(checkedit[j] == its2[i].value) {
+								its2[i].checked = true;
+								break;
+							} else {
+								its2[i].checked = false; //必须设为false，否则重新选择后，还会处于选中状态
+							}
+						}
+					}
+				}
+				//自我介绍
+				var text = document.getElementById("intro").value;
+				document.getElementById("intro2").value = text;
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<form name="testform">
+			姓名：<input type="text" name="name" id="name" value="hello" /><br/> 性别：
+			<input type="radio" name="gender" value="man" checked/>男
+			<input type="radio" name="gender" value="woman" />女
+			<input type="radio" name="gender" value="secret" />保密<br/> 学历：
+			<select id="select">
+				<option value="college">专科</option>
+				<option value="bachelor" selected>本科</option>
+				<option value="master">硕士</option>
+				<option value="doctor">博士</option>
+			</select><br/> 技能：
+			<input type="checkbox" name="it" value="java" />java
+			<input type="checkbox" name="it" value="c" checked/>C
+			<input type="checkbox" name="it" value="php" />php
+			<input type="checkbox" name="it" value="linux" checked/>linux
+			<br/> 自我介绍：
+			<br/>
+			<textarea rows="4" cols="20" id="intro">
+hi,大家好
+</textarea>
+			<br/>
+			<input type="reset" value="重置" />
+			<input type="button" value="数据回显" onclick="show()" />
+		</form>
+
+		<hr> 姓名：
+		<input type="text" name="name" id="name2" /><br/> 性别：
+		<input type="radio" name="gender2" value="man" />男
+		<input type="radio" name="gender2" value="woman" />女
+		<input type="radio" name="gender2" value="secret" />保密<br/> 学历：
+		<select id="select2">
+			<option value="college">专科</option>
+			<option value="bachelor">本科</option>
+			<option value="master">硕士</option>
+			<option value="doctor">博士</option>
+		</select><br/> 技能：
+		<input type="checkbox" name="it2" value="java" />java
+		<input type="checkbox" name="it2" value="c" />C
+		<input type="checkbox" name="it2" value="php" />php
+		<input type="checkbox" name="it2" value="linux" />linux
+		<br/> 自我介绍：
+		<br/>
+		<textarea rows="4" cols="20" id="intro2"></textarea>
+		<br/>
+	</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<head>
+	<!--<script type="text/javascript" src="js/h5.js" async></script>
+	<script type="text/javascript" src="js/classlist.js" async></script>
+	<script type="text/javascript" src="js/es5-sham.min.js" async></script>
+	<script type="text/javascript" src="js/es5-shim.min.js" async></script>
+	<script type="text/javascript" src="js/ieobject.js" async></script>-->
+	<meta charset="utf-8"/>
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="viewport" content="width=1224"/>
+	<link rel='stylesheet' href='../css/public.css' />
+	<link rel='stylesheet' href='../css/resetStyle.css'>
+	<!--<link rel="stylesheet" href="../css/distinguish.css" />-->
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+
+	
+	<script type="text/javascript">
+		try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }
+
+	</script>
+		
+	<style>
+		#distinguish .image{
+			width: 100%;
+			height: 800px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="rfloat" style="width: 60px; background: #ffffff; border-radius: 2px; height: 184px;position: fixed;top: 60%;right: 1%;z-index: 60;border: 1px solid grey;">
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf客服.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">联系客服</span>
+		</div>
+		<div style="width: 100%;height: 60px;border-bottom: 1px solid grey;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf下载.png"/>
+			</div>
+			<span style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">下载APP</span>
+		</div>
+		<div id='up' style="width: 100%;height: 60px;position: relative;">
+			<div style="width: 100%;height: 40px;position: relative;">
+				<img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" src="../img/xf返回顶部.png"/>
+			</div>
+			<span  style="width:100%;height:12px; text-align: center; font-size:12px;color: #333333;display: block;text-align: center;">返回顶部</span>
+		</div>
+	</div>
+
+	<div class="site-top">
+		<div class="topcontainer">
+			<div class="topnav">
+				<a href="http://sjyyy.com/">三江源官网</a>
+				<span class="spl">|</span>
+				<a href="../index.html">三江源网上商城</a>
+				<span class="spl">|</span>
+				<a href="shoplist.html">线下门店</a>
+			</div>
+			<a href="shopcar.html">
+				<div class="shopcar">
+					<img src="../img/购物车白色.png"alt="" />
+					<span style="position: relative;margin-left: 60px;">购物车</span>
+					<span class="car_mini_num">(0)</span>
+				</div>
+			</a>
+			
+			<div class="topbar-info">
+				<a href="login.html">登录</a>
+				<span class="spl">|</span>
+				<a href="register.html">注册</a>
+				<span class="spl">|</span>
+				<a href="">个人中心</a>
+				<span class="spl">|</span>
+				<a href="myorder.html">我的订单</a>
+				
+			</div>	
+		</div>
+	</div>
+	
+	<div class="home_first">
+		<div class="home_first_content">
+			<div class="logo">
+				<img src="../img/logo.png"/>
+			</div>
+			<a href="../index.html" class="hfc_link ">首页</a>
+			<a href="" class="hfc_link">仙草预售</a>
+			<a href="fenlei.html" class="hfc_link">爆款虫草</a>
+			<a href="" class="hfc_link">虫草鉴别</a>
+			<a href="distinguish.html" class="hfc_link borderbottom">虫草故事</a>
+			<div class="search">
+				<input type="" name="" id="" value="" placeholder="搜索"/>
+				<div class="searchSubmit">
+					<img src="../img/搜索-搜索.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--主体-->
+	<div id='distinguish'>
+		<div class='image'><img src='../img/鉴别1.png' /></div>
+		<div class='image'><img src='../img/鉴别2.png' /></div>
+		<div><img src='../img/鉴别3.png' /></div>
+	</div>
+
+<!--底部-->
+	<div class="footdiv">
+		<div class="foothead">
+				<div class="footheadcontainer">
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+					<div class="foottitle">
+						<img src="../img/优.png" alt="" />
+						<span class="titlecontent">种类齐全   轻松购物</span>
+					</div>
+				</div>
+		</div>
+		<div class="footbody">
+			<div class="foot_list">
+				<span class="listtitle">购物指南</span>
+				<ul>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">会员介绍</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">联系客服</a></li>
+					<li><a href="">用户反馈</a></li>
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">配送方式</span>
+				<ul>
+					<li><a href="">门店自提</a></li>
+					<li><a href="">快递配送</a></li>
+
+				</ul>
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">支付方式</span>
+				<ul>
+					<li><a href="">支付宝支付</a></li>
+					<li><a href="">微信支付</a></li>
+					
+				</ul>	
+				
+			</div>
+			<div class="foot_list">
+				<span class="listtitle">售后服务</span>
+				<ul>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">退款说明</a></li>
+					<li><a href="">取消订单</a></li>
+				</ul>
+			</div>
+			<div class="code">
+				<span class="listtitle">三江源APP</span>
+				<div class="codeimg">
+					<img src="../img/微信截图_20170515153009.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="footbottom">
+			<p>
+				<a href="">关于我们</a>
+				<span class="spll">|</span>
+				<a href="">帮助中心</a>
+				<span class="spll">|</span>
+				<a href="">售后服务</a>
+				<span class="spll">|</span>
+				<a href="">配送与验收</a>
+				<span class="spll">|</span>
+				<a href="">企业采购</a>
+				<span class="spll">|</span>
+				<a href="">友情链接</a>
+			</p>
+			<p>
+				<a href="">京公安备11002305678088号</a>
+				<span class="spll">|</span>
+				<a href="">京ICP证070359号</a>
+				<span class="spll">|</span>
+				<a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+				<span class="spll">|</span>
+				<a href="">食品经营许可证：123456468789321</a>
+				
+			</p>
+			<p>
+				<a href="">三江源公司版权所有@2017-2027</a>
+				<span class="spll">|</span>
+				<a href="">消费者维权热线4006067733</a>
+				<span class="spll">|</span>
+				<a href="">经营证照</a>			
+			</p>
+			<p style="margin-top: 24px;">
+				<a href=""><img src="../img/备案.png" alt="" /></a>
+				<a href=""><img src="../img/信用评价.png"/></a>
+				<a href=""><img src="../img/网络警察.png" alt="" /></a>
+				<a href=""><img src="../img/网路举报.png" alt="" /></a>
+				<a href=""><img src="../img/诚信网站.png" alt="" /></a>
+				<a href=""><img src="../img/举报中心.png" alt="" /></a>
+			</p>
+			
+		</div>
+	</div>
+</body>
+</html>

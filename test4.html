@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="../js/jquery-1.8.3.js"></script>
+.one{
+width:230px;height:160px;position:relative;}
+.two{
+bottom:3px;right:0px;position:absolute;
+}
+#textArea{
+width:100%;
+height:100%;
+}
+</head>
+<body>
+<!-- 在处理textarea之前，首先需知道textarea是不会显示value值的，
+如果想显示需要使用js中的方法 $('#textArea').val('123'); -->
+<div class="one">
+<textarea id="textArea" cols="30" rows="10">测试</textarea>
+<span class='two'><span id="textNum">0</span>/100</span>
+<!-- 最多100字符，0处显示的是已经写了多少字符 -->
+</div>
+<script>
+$('#textArea').on("keyup",function(){
+$('#textNum').text($('#textArea').val().length);//这句是在键盘按下时，实时的显示字数
+if($('#textArea').val().length > 100){
+$('#textNum').text(100);//长度大于100时0处显示的也只是100
+$('#textArea').val($('#textArea').val().substring(0,100));//长度大于100时截取钱100个字符
+}
+})
+$('#textNum').text($('#textArea').val().length);//这句是在刷新的时候仍然显示字数
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.changAcount{
+	cursor: pointer;
+}
+.changAcount a{
+	color: #333333;
+}
+.shopcar{
+	/*display: inline-block;*/
+	background: #25B351 !important; 
+	width: 160px;
+	float: right;
+	margin-left: 20px;
+	position:relative !important;
+	height: 40px;
+	line-height: 40px;
+}
+
+.search{
+	border: 2px solid #25B351 !important;
+	border-radius: 2px;
+}
+.searchSubmit{
+	border-left: 2px solid #25B351 !important;
+}
+.userdrow{
+	width: 100px;
+	position: absolute;
+	height: 500px;
+	display: none;
+	z-index: 8000;
+	top: 34px;
+}
+.udbox{
+	background: #fff;
+	width: 100%;
+	border: 1px solid #BBBBBB;
+	border-top: 0;
+	border-radius: 2px;
+}
+.udbox ul li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+.udbox ul li a{
+	color: #333333;
+}
+.udbox ul li a:hover{
+	color: #25B351;
+}
+
+/************************/
+/***************************/
+.canvas-box{ position: relative;margin:0 auto;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none }
+		.canvas-box .overlay{ position: absolute; left: 0; top: 0; cursor: move;border:1px solid #69f;}
+		.canvas-box div,.canvas-box canvas{-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none}
